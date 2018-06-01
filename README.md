@@ -20,9 +20,9 @@ Fitur :
    - Produk    : (Nama produk, Harga, Deskripsi singkat produk)
    - Detail Produk : (Nama produk, kategori, harga, dilihat, foto/video produk, deskripsi produk, profil penjual/peternak)
  2. Pembeli
-   - Pembayaran (Form pembayaran, ternak yang dibeli, pengiriman)
-   - Konfirmasi pembayaran (kode pembayaran, lama waktu pengiriman)
-   - Tracking pembelian
+    - Pembayaran (Form pembayaran, ternak yang dibeli, pengiriman)
+    - Konfirmasi pembayaran (kode pembayaran, lama waktu pengiriman)
+    - Tracking pembelian
  3. Penjual
     - Upload produk (profil ternak, foto/video produk, harga, deskripsi produk)
     - Laporan status penjualan (sudah diterima pembayaran, pengiriman)
