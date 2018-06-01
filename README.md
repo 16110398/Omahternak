@@ -6,10 +6,12 @@ Kelompok :
 - Taufik Hidayat          16.11.0399
 - Muhammad Hanif Ramadhan 16.11.0368
 
-Nama Startup : Omahternak.com
+Nama Startup : 
+- Omahternak.com
 
 Deskripsi : 
-- Omahternak.com adalah website jual beli hewan ternak dan tempat berinvestasi ternak secara online
+- Omahternak.com adalah website jual beli hewan ternak dan tempat berinvestasi ternak secara online.
+
 Fitur :
 1. User 
    - Homepage  : (Terbaru, peternakan/produk peternakan, cara jual/beli dan berinvestasi, kategori, metode pembayaran, kontak,
