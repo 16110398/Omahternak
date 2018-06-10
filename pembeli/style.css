@@ -1,0 +1,29 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+.keranjang{
+	max-width: 800px;
+	margin: auto;
+}
+.keranjang h3{
+	text-align: center;
+	font-size: 25px;
+	padding: 10px 5px;
+	background: #FFE4C4;
+}
+.keranjang p{
+	border: solid 1px;
+	text-align: justify;
+	font-size: 17px;
+}
+.keranjang input{
+	color: black;
+	font-size: 15px;
+}
+.keranjang h5{
+	text-align: center;
+}
+.detail{
+	padding-top: 10px;
+}
