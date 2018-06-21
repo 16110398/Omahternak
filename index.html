@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tempat Jual Beli Ternak dan Investasi Ternak Terpercaya | Omahternak.com</title>
+	<link rel="icon" type="image/png" href="img/icon/omahternak1.png">
+
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" id="bootstrap-css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/style.css">
+	<script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    	$(document).ready(function(e){
+   			$('.search-panel .dropdown-menu').find('a').click(function(e) {
+				e.preventDefault();
+				var param = $(this).attr("href").replace("#","");
+				var concept = $(this).text();
+				$('.search-panel span#search_concept').text(concept);
+				$('.input-group #search_param').val(param);
+			});
+		});
+    </script>
+</head>
+<body>
+	<nav class="navbar navbar-fixed-top" role="navigation">
+  	<div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-1 imgnav">
+      <img src="img/icon/omahternak2.png" alt="OmahTernak" title="Omahternak" class="img-responsive">
+      </div>
+
+        <div class="col-xs-7 cari">
+        <div class="input-group">
+                <div class="input-group-btn search-panel">
+                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                      <span id="search_concept">Kategori </span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                      <li role="presentation"><a href="#sapi">Sapi</a></li>
+                      <li role="presentation"><a href="#kerbau">Kerbau</a></li>
+                      <li role="presentation"><a href="#">Kambing</a></li>
+                      <li role="presentation"><a href="#">Domba</a></li>
+                      <li role="presentation"><a href="#">Angsa</a></li>
+                      <li role="presentation"><a href="#">Bebek</a></li>
+                      <li role="presentation"><a href="#">Ayam</a></li>
+                      <li role="presentation"><a href="#">Burung</a></li>
+                      <li role="presentation"><a href="#">Ikan</a></li>
+                      <li role="presentation" class="divider"></li>
+                      <li role="presentation"><a href="#all">Lain-Lain</a></li>
+                    </ul>
+                </div>
+
+                <input type="hidden" name="search_param" value="all" id="search_param">         
+                <input type="text" class="form-control" name="x" placeholder="Cari ternak...?">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">Cari</button>
+                </span>
+            </div>
+        </div>
+        <div class="col-xs-0 cari ">
+        <button type="button" class="btn btn-outline-light">Daftar</button>
+        <button type="button" class="btn btn-warning">Masuk</button>
+        </div>
+ 	 </div>
+	</div>
+	</nav>
+
+
+  <div class="container-fluid">
+    <h2>Carousel Example</h2>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+
+      
+      <div class="carousel-inner">
+
+        <div class="item active">
+          <img src="img/sapi2.jpg" alt="Sapi" style="width:100%; height:350px; ">
+          <div class="carousel-caption">
+            <h3><strong>Harga Murah</strong></h3>
+            <p>ffffff</p>
+          </div>
+        </div>
+
+        <div class="item">
+          <img src="img/sapi1.jpg" alt="Sapi" style="width:100%; height:350px">
+          <div class="carousel-caption">
+           <h3><strong>Sapi Super</strong></h3>
+            <p>fffff</p>
+          </div>
+        </div>
+      
+        <div class="item">
+          <img src="img/sapi2.jpg" alt="Investasi" style="width:100%; height:350px">
+          <div class="carousel-caption">
+            <h3><strong>Mudah Berinvestasi di Omahternak.com</strong></h3>
+            <p>ffffff</p>
+          </div>
+        </div>
+      </div>
+
+      
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  <br/>
+
+	<div class="container-fluid">
+	<div class="panel panel-default panel1">
+    <div class="row x">
+    <div class="container-fluid panel panel-default panelterbaru">
+    <div class="col-xs-10"><h3 class="h3panel">Terbaru</h3>
+    <button class="btn btn-default btnpanel">Lihat Semuanya</button></div>
+    <div class="col-xs-2"><img src="img/cow1.png"></div>
+    </div>
+        <div class="col-sm-3 polaroid">
+          <a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+            <h4>Sapi Potong</h4> <br/>
+            <h4 class="orange">Rp. 13.000.000,-</h4>
+            <p>Minimal Pembelian : </p>
+            <h4 class="green">3 Ekor</h4>
+            <button class="btn btn-danger">Beli</button>   
+        </div>
+
+        <div class="col-sm-3 polaroid">
+            <a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+            <h4>Sapi Perah</h4> <br/>
+            <h4 class="orange">Rp. 13.000.000,-</h4>
+            <p>Minimal Pembelian : </p>
+            <h4 class="green">3 Ekor</h4>
+            <button class="btn btn-danger">Beli</button>   
+        </div>
+
+        <div class="col-sm-3 polaroid">
+            <a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+            <h4>Sapi Potong</h4> <br/>
+            <h4 class="orange">Rp. 13.000.000,-</h4>
+            <p>Minimal Pembelian : </p>
+            <h4 class="green">3 Ekor</h4>
+            <button class="btn btn-danger">Beli</button>       
+        </div>
+
+        <div class="col-sm-3 polaroid">
+            <a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+            <h4>Sapi Potong</h4> <br/>
+            <h4 class="orange">Rp. 13.000.000,-</h4>
+            <p>Minimal Pembelian : </p>
+            <h4 class="green">3 Ekor</h4>
+            <button class="btn btn-danger">Beli</button>       
+        </div>
+
+        <div class="col-sm-3 polaroid">
+            <a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+            <h4>Sapi Perah</h4> <br/>
+            <h4 class="orange">Rp. 13.000.000,-</h4>
+            <p>Minimal Pembelian : </p>
+            <h4 class="green">3 Ekor</h4>
+            <button class="btn btn-danger">Beli</button>     
+        </div>
+
+        <div class="col-sm-3 polaroid">
+            <a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+            <h4>Sapi Madura</h4> <br/>
+            <h4 class="orange">Rp. 13.000.000,-</h4>
+            <p>Minimal Pembelian : </p>
+            <h4 class="green">3 Ekor</h4>
+            <button class="btn btn-danger">Beli</button>     
+        </div>
+     </div>
+     </div>
+     <br/>
+
+    <div class="panel panel-default panel1">
+ 	 	<div class="row x">
+ 	 	<div class="container-fluid panel panel-default panelsapi">
+    <div class="col-xs-10"><h3 class="h3panel">Sapi</h3>
+    <button class="btn btn-default btnpanel">Lihat Semuanya</button></div>
+    <div class="col-xs-2"><img src="img/cow1.png"></div>
+    </div>
+    		<div class="col-sm-3 polaroid">
+    			<a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+      			<h4>Sapi Potong</h4> <br/>
+      			<h4 class="orange">Rp. 13.000.000,-</h4>
+      			<p>Minimal Pembelian : </p>
+      			<h4 class="green">3 Ekor</h4>
+      			<button class="btn btn-danger">Beli</button>   
+   			</div>
+
+    		<div class="col-sm-3 polaroid">
+      			<a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+      			<h4>Sapi Perah</h4> <br/>
+      			<h4 class="orange">Rp. 13.000.000,-</h4>
+      			<p>Minimal Pembelian : </p>
+      			<h4 class="green">3 Ekor</h4>
+      			<button class="btn btn-danger">Beli</button>   
+    		</div>
+
+    		<div class="col-sm-3 polaroid">
+      			<a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+      			<h4>Sapi Potong</h4> <br/>
+      			<h4 class="orange">Rp. 13.000.000,-</h4>
+      			<p>Minimal Pembelian : </p>
+      			<h4 class="green">3 Ekor</h4>
+      			<button class="btn btn-danger">Beli</button>       
+    		</div>
+
+    		<div class="col-sm-3 polaroid">
+      			<a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+      			<h4>Sapi Potong</h4> <br/>
+      			<h4 class="orange">Rp. 13.000.000,-</h4>
+      			<p>Minimal Pembelian : </p>
+      			<h4 class="green">3 Ekor</h4>
+      			<button class="btn btn-danger">Beli</button>       
+    		</div>
+
+    		<div class="col-sm-3 polaroid">
+      			<a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+      			<h4>Sapi Perah</h4> <br/>
+      			<h4 class="orange">Rp. 13.000.000,-</h4>
+      			<p>Minimal Pembelian : </p>
+      			<h4 class="green">3 Ekor</h4>
+      			<button class="btn btn-danger">Beli</button>     
+    		</div>
+
+        <div class="col-sm-3 polaroid">
+            <a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+            <h4>Sapi Madura</h4> <br/>
+            <h4 class="orange">Rp. 13.000.000,-</h4>
+            <p>Minimal Pembelian : </p>
+            <h4 class="green">3 Ekor</h4>
+            <button class="btn btn-danger">Beli</button>     
+        </div>
+      </div>
+ 		 </div>
+ 		 <br/>
+
+     <div class="panel panel-default panel1">
+ 		 <div class="row x">
+ 		  <div class="container-fluid panel panel-default panelkambing">
+      <div class="col-xs-10"><h3 class="h3panel">Kambing</h3>
+      <button class="btn btn-default btnpanel">Lihat Semuanya</button></div>
+      <div class="col-xs-2"><img src="img/kambing.png"></div>
+      </div>
+    		<div class="col-sm-3 polaroid">
+    			<a href="#"><img src="img/kambingjawa.jpg" class="img-thumbnail"></a>
+      			<h4>Kambing Jawa</h4> <br/>
+      			<h4 class="orange">Rp. 3.000.000,-</h4>
+      			<p>Minimal Pembelian : </p>
+      			<h4 class="green">3 Ekor</h4>
+      			<button class="btn btn-danger">Beli</button>   
+   			</div>
+
+    		<div class="col-sm-3 polaroid">
+      			<a href="#"><img src="img/kambingjawa.jpg" class="img-thumbnail"></a>
+      			<h4>Kambing Jawa</h4> <br/>
+      			<h4 class="orange">Rp. 2.450.000,-</h4>
+      			<p>Minimal Pembelian : </p>
+      			<h4 class="green">3 Ekor</h4>
+      			<button class="btn btn-danger">Beli</button>   
+    		</div>
+
+    		<div class="col-sm-3 polaroid">
+      			<a href="#"><img src="img/kambingjawa.jpg" class="img-thumbnail"></a>
+      			<h4>Kambing Jawa</h4> <br/>
+      			<h4 class="orange">Rp. 2.600.000,-</h4>
+      			<p>Minimal Pembelian : </p>
+      			<h4 class="green">3 Ekor</h4>
+      			<button class="btn btn-danger">Beli</button>       
+    		</div>
+    		<div class="col-sm-3 polaroid">
+      			<a href="#"><img src="img/dombagarut.jpeg" class="img-thumbnail"></a>
+      			<h4>Domba Garut</h4> <br/>
+      			<h4 class="orange">Rp. 4.500.000,-</h4>
+      			<p>Minimal Pembelian : </p>
+      			<h4 class="green">3 Ekor</h4>
+      			<button class="btn btn-danger">Beli</button>      
+    		</div>
+
+    		<div class="col-sm-3 polaroid">
+      			<a href="#"><img src="img/kambingjawa.jpg" class="img-thumbnail"></a>
+      			<h4>Kambing Etawa</h4> <br/>
+      			<h4 class="orange">Rp. 2.700.000,-</h4>
+      			<p>Minimal Pembelian : </p>
+      			<h4 class="green">3 Ekor</h4>
+      			<button class="btn btn-danger">Beli</button>      
+    		</div>
+
+        <div class="col-sm-3 polaroid">
+            <a href="#"><img src="img/kambingjawa.jpg" class="img-thumbnail"></a>
+            <h4>Kambing Etawa</h4> <br/>
+            <h4 class="orange">Rp. 2.700.000,-</h4>
+            <p>Minimal Pembelian : </p>
+            <h4 class="green">3 Ekor</h4>
+            <button class="btn btn-danger">Beli</button>      
+        </div>
+ 		 </div>
+     </div>
+ 		 <br/>
+
+     <div class="panel panel-default panel1">
+ 		 <div class="row x">
+ 		 <div class="container-fluid panel panel-default panelunggas">
+      <div class="col-xs-10"><h3 class="h3panel">Unggas</h3>
+      <button class="btn btn-default btnpanel">Lihat Semuanya</button></div>
+      <div class="col-xs-2"><img src="img/ayam1.png"></div>
+      </div>
+    		<div class="col-sm-3 polaroid">
+    			<a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+      			<h4 class="black">Ayam Kalkun</h4> <br/>
+      			<h4 class="orange">Rp. 13.000.000,-</h4>
+      			<p class="black">Minimal Pembelian : </p>
+      			<h4 class="green">3 Ekor</h4>
+      			<button class="btn btn-danger">Beli</button>   
+   			</div>
+
+    		<div class="col-sm-3 polaroid">
+      			<a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+      			<h4>Ayam</h4> <br/>
+      			<h4 class="orange">Rp. 13.000.000,-</h4>
+      			<p>Minimal Pembelian : </p>
+      			<h4 class="green">3 Ekor</h4>
+      			<button class="btn btn-danger">Beli</button>   
+    		</div>
+
+    		<div class="col-sm-3 polaroid">
+      			<a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+      			<h4>Entok</h4> <br/>
+      			<h4 class="orange">Rp. 13.000.000,-</h4>
+      			<p>Minimal Pembelian : </p>
+      			<h4 class="green">3 Ekor</h4>
+      			<button class="btn btn-danger">Beli</button>        
+    		</div>
+
+    		<div class="col-sm-3 polaroid">
+      			<a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+      			<h4>Bebek</h4> <br/>
+      			<h4 class="orange">Rp. 13.000.000,-</h4>
+      			<p>Minimal Pembelian : </p>
+      			<h4 class="green">3 Ekor</h4>
+      			<button class="btn btn-danger">Beli</button>       
+    		</div>
+
+    		<div class="col-sm-3 polaroid">
+      			<a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+      			<h4>Angsa</h4> <br/>
+      			<h4 class="orange">Rp. 13.000.000,-</h4>
+      			<p>Minimal Pembelian : </p>
+      			<h4 class="green">3 Ekor</h4>
+      			<button class="btn btn-danger">Beli</button>      
+    		</div>
+ 	
+     <div class="col-sm-3 polaroid">
+            <a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+            <h4>Angsa</h4> <br/>
+            <h4 class="orange">Rp. 13.000.000,-</h4>
+            <p>Minimal Pembelian : </p>
+            <h4 class="green">3 Ekor</h4>
+            <button class="btn btn-danger">Beli</button>      
+        </div>
+     </div>
+     </div>
+ 		 <br/>
+
+     <div class="panel panel-default panel1">
+ 		 <div class="row x">
+ 		 <div class="container-fluid panel panel-default panelikan">
+      <div class="col-xs-10"><h3 class="h3panel">Ikan</h3>
+      <button class="btn btn-default btnpanel">Lihat Semuanya</button>
+      </div>
+      <div class="col-xs-2">
+      
+      <img src="img/fish.png">
+      </div>
+      </div>
+    		<div class="col-sm-3 polaroid">
+    			<a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+      			<h4>Ikan</h4> <br/>
+      			<h4 class="orange">Rp. 13.000.000,-</h4>
+      			<p>Minimal Pembelian : </p>
+      			<h4 class="green">3 Ekor</h4>
+      			<button class="btn btn-danger">Beli</button>   
+   			</div>
+
+    		<div class="col-sm-3 polaroid">
+      			<a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+      			<h4>Kepiting</h4> <br/>
+      			<h4 class="orange">Rp. 13.000.000,-</h4>
+      			<p>Minimal Pembelian : </p>
+      			<h4 class="green">3 Ekor</h4>
+      			<button class="btn btn-danger">Beli</button>   
+    		</div>
+
+    		<div class="col-sm-3 polaroid">
+      			<a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+      			<h4>Udang</h4> <br/>
+      			<h4 class="orange">Rp. 13.000.000,-</h4>
+      			<p>Minimal Pembelian : </p>
+      			<h4 class="green">3 Ekor</h4>
+      			<button class="btn btn-danger">Beli</button>     
+    		</div>
+
+    		<div class="col-sm-3 polaroid">
+      			<a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+      			<h4>Cumi</h4> <br/>
+      			<h4 class="orange">Rp. 13.000.000,-</h4>
+      			<p>Minimal Pembelian : </p>
+      			<h4 class="green">3 Ekor</h4>
+      			<button class="btn btn-danger">Beli</button>       
+    		</div>
+
+    		<div class="col-sm-3 polaroid">
+      			<a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+      			<h4>Ikan</h4> <br/>
+      			<h4 class="orange">Rp. 13.000.000,-</h4>
+      			<p>Minimal Pembelian : </p>
+      			<h4 class="green">3 Ekor</h4>
+      			<button class="btn btn-danger">Beli</button>      
+    		</div>
+
+        <div class="col-sm-3 polaroid">
+            <a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+            <h4>Ikan</h4> <br/>
+            <h4 class="orange">Rp. 13.000.000,-</h4>
+            <p>Minimal Pembelian : </p>
+            <h4 class="green">3 Ekor</h4>
+            <button class="btn btn-danger">Beli</button>      
+        </div>
+ 		 </div>
+     </div>
+	</div>
+	
+	<div class="panel-footer x2">
+	<div class="container-fluid">
+		<div class="col-md-3 z1">
+			<img src="img/icon/omahternak2.png" alt="OmahTernak" title="Omahternak" class="img-responsive">
+		</div>
+
+		<div class="col-sm-6 z2">
+				<h5>Metode Pembayaran Rekening Bersama : </h5>
+				<a href="#"><img src="img/iconsosmed/bank.png" width="350px" alt="Rekening bersama Omahternak" title="Bank Transfer Omahternak"></a></li>
+		</div>
+
+		<div class="col-md-3 z3">
+			<h5>Ikuti Kami : </h5>
+				<ul>
+					<li><a rel="follow" target="_blank" href="#"><img alt="facebook omahternak" title="Facebook Omahternak" src="img/iconsosmed/facebook.png" width="30px"></a></li>
+
+					<li><a rel="follow" target="_blank" href="#"><img alt="twitter omahternak" title="Twitter Omahternak" src="img/iconsosmed/twitter.png" width="30px"></a></li>
+
+					<li><a rel="follow" target="_blank" href="#"><img alt="instagram omahternak" title="Instagram Omahternak" src="img/iconsosmed/instagram.png" width="30px"></a></li>
+
+					<li><a rel="follow" target="_blank" href="#"><img alt="youtube omahternK" title="Youtube Omahternak" src="img/iconsosmed/youtube.png" width="30px"></a></li>
+
+					<li><a rel="follow" target="_blank" href="#"><img alt="google plus omahternak" title="Google Plus Omahtenak" src="img/iconsosmed/google-plus.png" width="30px"></a></li>
+				</ul>
+			</div>
+			
+		</div>
+		</div>
+
+	<div class="container-fluid" style="background-color:#00c300";>
+		<div class="row x1 y">
+    <br/>
+			<div class="col-sm-3 col-sm-3">
+				<h4 class="z">Hubungi Kami</h4>
+				<ul class="z">
+				<li><strong>Omahternak.com</strong> adalah Tempat Jual Beli Ternak dan Investasi Ternak Terpercaya.</li>
+				<li>Jl. Bibis No.25, Bangunjiwo, Kasihan, Bantul, D.I Yogyakarta</li>
+				<li>cs@omahternak.com</li>
+				<li>Jam Layanan: 08.00-17.00 WIB</li>
+				</ul>
+			</div>
+
+			<div class="col-sm-2 col-sm-2">
+			<h4 class="z">Panduan Umum</h4>
+				<ul class="z">
+				<li><a href="#" title="About us">Tentang Omahternak.com</a></li>
+				<li><a href="#" title="FAQ">FAQ</a></li>
+				<li><a href="#" title="FAQ">Panduan Omahternak.com</a></li>
+				<li><a target='_blank' href="#" title="Blog">Blog</a></li>
+				</ul>
+			</div>
+
+			<div class="col-sm-2 ">
+				<h4 class="z">Pembeli / Penjual</h4>
+				<ul class="z">
+				<li><a target="_blank" href="#">Cara Beli di Omahternak.com</a></li>
+				<li><a target="_blank" href="#">Pengembalian Barang (Pembeli)</a></li>
+				<li><a target="_blank" href="#">Cara Jualan di Omahternak.com</a></li>
+				<li><a target="_blank" href="#">Pengembalian Barang (Penjual)</a></li>
+				</ul>
+			</div>
+
+      <div class="col-sm-2">
+        <h4 class="z">Investasi</h4>
+        <ul class="z">
+        <li><a target="_blank" href="#i">Cara Investasi di Omahternak.com</a></li>
+        </ul>
+      </div>
+
+			<div class="col-sm-3">
+				<h4 class="z">Download aplikasi Omahternak.com <br>di Play Store sekarang.</h4>
+				<ul class="z"><li><a href='#'><img width="240" alt='Temukan di Google Play' src='img/iconsosmed/id_badge_web_generic.png'/></a></li></ul>
+			</div>
+
+		</div>
+	</div>
+
+<div class="panel-footer">&copy; 2018 Omahternak.com</div>
+</body>
+</html>
