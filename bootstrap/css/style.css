@@ -1,7 +1,6 @@
 .navbar-fixed-top{
     padding-top: 5px;
     padding-bottom: 3px;
-
     background: #00c300;
     	
 }
@@ -28,7 +27,7 @@ ul.dropdown-menu:before{
     margin-left: 3px;
 }
 .btn-outline-light{
-    margin-left: 65px;
+   
 }
 
 
