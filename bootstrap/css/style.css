@@ -23,14 +23,6 @@ ul.dropdown-menu:before{
     transition: none;
 }
 
-.btn-warning{
-    margin-left: 3px;
-}
-.btn-outline-light{
-    margin-left: 65px;
-}
-
-
 .orange{
     color:orange;
 }
@@ -162,7 +154,8 @@ ul.dropdown-menu:before{
 
 .imgnav{
     width: 250px;
-    padding-right: 50px;
+    padding-right: 40px;
+    padding-left: 20px;
 }
 
 .cari{
