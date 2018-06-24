@@ -1,5 +1,5 @@
 .navbar-fixed-top{
-    padding-top: 5px;
+    padding-top: 8px;
     padding-bottom: 3px;
     background: #00c300;
     	
@@ -85,12 +85,15 @@ ul.dropdown-menu:before{
 	margin: 6px;
 	width: 190px;
 	height: 335px;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0), 0 3px 10px 0 rgba(0, 0, 0, 0.10); 
 }
 
 .polaroid:hover{
-	background: #eee;
+    background-color: #e8e6e6;
+	border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    
 }
 
 .x{
@@ -168,4 +171,20 @@ ul.dropdown-menu:before{
 
 .btnpanel{
     margin-top: 20px;
+}
+
+.btn-info{
+    margin-left: 20px;
+    background:#00c300;
+    color: #fff;
+    border-color: white;
+}
+
+.btn-info:hover{
+    background: #ebebeb;
+    color: #000;
+}
+
+.carouselimg{
+    margin-top: 70px;
 }
