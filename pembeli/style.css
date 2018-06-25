@@ -1,37 +1,51 @@
-*{
-	box-sizing: border-box;
-}
 body{
 	font-family: glyphicons-halflings;
 }
-header{
-	background-color: #00c300;
-	padding: 5px;
-	font-size: 35px;
-	color: white;
-	text-align: center;
-}
-section{
-	display: table;
-	clear: both;
-}
-.detail-dibeli{
-	padding-top: 70px;
-}
-footer{
-	background-color: #00c300;
-	padding: 5px;
-	text-align: center;
-	color: white;
+.navbar-brand{
+	margin-top: -10px;
 }
 @media (max-width: 600px){
 }
-h3{
-	text-align: center;
+.atas{
+	float: right;
 }
-.judul-tabel{
+.bawah{
+	float: left;
+}
+.metod{
 	font-weight: bold;
 	text-align: center;
-	border-bottom: solid 1px black;
+}
 
+.polaroid {
+	padding: 10px;
+	margin: 6px;
+	width: 100px;
+	height: 150px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #fff;
+}
+
+.polaroid:hover{
+	background: #eee;
+}
+
+.table-bordered{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #fff;
+}
+
+.imgnav{
+    width: 250px;
+    padding-right: 50px;
+}
+.search{
+	margin-top: 7px;
+}
+.container{
+	margin-top: 5%;
+}
+.panel-default{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #fff;
 }
