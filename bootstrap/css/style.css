@@ -84,7 +84,7 @@ ul.dropdown-menu:before{
 	padding: 10px;
 	margin: 6px;
 	width: 190px;
-	height: 305px;
+	height: 315px;
     border-radius: 5px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0), 0 3px 7px 0 rgba(0, 0, 0, 0.10); 
 }
@@ -97,26 +97,26 @@ ul.dropdown-menu:before{
     
 }
 
-.x{
+.paddingpanel{
 	padding-left: 25px;
 }
 
-.x1{
+.colortextpanel{
     color: white;
 }
 
-.x2 ul{
+.panelfootersosmed ul{
     display: flex;
     margin: 0;
     padding: 2px;
 
 }
 
-.x2 ul li{
+.panelfootersosmed ul li{
     list-style: none;
 }
 
-.x2 ul li a{
+.panelfootersosmed ul li a{
     color: white;
     text-decoration: none;
     line-height: 25px;
@@ -124,37 +124,26 @@ ul.dropdown-menu:before{
 
 }
 
-
-.y ul li{
+.panelbawah ul li{
     list-style: none;
 }
 
-.y ul li a{
+.panelbawah ul li a{
     color: white;
     text-decoration: none;
     line-height: 25px;
-
-
 }
 
-.y ul li a:hover{
-    
+.panelbawah ul li a:hover{
     font-weight: bold;
 
 }
 
-.z{
+.paddingtxt-panelbottom{
     padding-left: 5px;
     padding-right: 5px;
 }
 
-
-.z1{
-    padding-left: 10px;
-    padding-right: 5px;
-
-
-}
 
 .imgnav{
     width: 250px;
