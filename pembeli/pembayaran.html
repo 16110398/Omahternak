@@ -2,101 +2,137 @@
 <html>
 <head>
 	<title>Pembayaran</title>
+	<link rel="icon" type="image/png" href="img/icon/omahternak1.png">
+
+	<link rel="stylesheet" href="css/bootstrap.min.css" id="bootstrap-css">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet"  href="css/bootstrap.min.css">
-	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
+     <script type="text/javascript">
+    	$(document).ready(function(e){
+   			$('.search-panel .dropdown-menu').find('a').click(function(e) {
+				e.preventDefault();
+				var param = $(this).attr("href").replace("#","");
+				var concept = $(this).text();
+				$('.search-panel span#search_concept').text(concept);
+				$('.input-group #search_param').val(param);
+			});
+		});
+    </script>
 
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
 
+  
 </head>
 <body>
-
-	<header class="navbar-fixed-top">
-		<h2>Pembayaran</h2>
-	</header>
-
-	<section>
-		<div class="detail-dibeli">
-		<div class="panel panel-success">
-			<table class="table">
-				<tr class="judul-tabel">
-					<td colspan="3">Detail Hewan Ternak Yang Dibeli</td>
-				</tr>
-				<tr>
-					<td>Hewan Ternak</td>
-					<td>:</td>
-					<td>SAPI</td>
-				</tr>
-					<tr>
-					<td>Kategori</td>
-					<td>:</td>
-					<td>A1</td>
-				</tr>
-
-				<tr>
-					<td>Penjual</td>
-					<td>:</td>
-					<td>Budi Santoso</td>
-				</tr>
-					<tr>
-					<td>Harga</td>
-					<td>:</td>
-					<td>Rp 2.300.000</td>
-				</tr>
-			</table>
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+  	<div class="row">
+    <div class="navbar-header">
+    	<div class="col-xs-2 imgnav">
+      <img src="img/icon/omahternak2.png" alt="OmahTernak" title="Omahternak" class="img-responsive">
+      <a class="nabar-brand"></a>
+  </div>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                      
+      </button>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        	<div class="col-xs-6 search">
+        	<div class="input-group">
+        	<input type="hidden" name="search_param" value="all" id="search_param">         
+                <input type="text" class="form-control" name="x" placeholder="Cari ternak...?">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button" style="margin-bottom: 7px;">Cari</button>
+                </span>
+			</div>
+			</div>
+			<div class="col-xs-2 navbar-right" style="margin-top: 10px;">
+			<ul class="list-inline">
+		     <li><a href="#" title="Akun" data-toggle="popover" data-placement="bottom" data-content="Log Out"><span class="glyphicon glyphicon-user">Akun</span><span class="caret"></span></a></li>
+		      </ul>
+		  </div>
 		</div>
-		</div>
+  </div>
+</div>
+</div>
+</nav>
 
 
-		<div class="panel panel-default">
-			<table class="table">
-				<tr class="judul-tabel">
-					<td colspan="3" >Pengiriman</td>
-				</tr>
+<div class="container">
+	<div class="table-responsive">
+		<table class="table table-bordered">
+				<thead>
 				<tr>
-					<td>Biaya Pengiriman</td>
-					<td>=</td>
-					<td>Rp 400.000</td>
+					<td colspan="6">Pembelian dari : <div class="text-success">Peternak Budi</div></td>
 				</tr>
+			</thead>
+			<tbody>
 				<tr>
-					<td>Waktu Pengiriman</td>
-					<td>:</td>
-					<td>5-7 hari</td>
+					<td><dt>Sapi Potong</dt></td>
+					<td><dt> Harga</dt>Rp 12.000.000/nett,-</td>
+					<td colspan="4"><dt> Keterangan</dt>-</td>
 				</tr>
-			</table>
-		</div>
+				<tr >
+					<td><dt> Alamat Tujuan</dt><br/>Jl.Jambu no.04 Condongcatur Sleman</td>
+					<td><dt> Asuransi</dt>
+					<div class="input-group">
+						 <div class="input-group-btn search-panel">
+    					<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+				    <span id="search_concept">Pilih</span><span class="caret"></span></button>
+				    <ul class="dropdown-menu" role="menu">
+				      <li role="presentation"><a href="#">Iya</a></li>
+				      <li role="presentation"><a href="#">Tidak</a></li>
+				    </ul>
+				  </div>
+				</div>
+										
+				</td>
 
-		<div class="panel panel-default">
-			<table class="table">
-				<tr class="judul-tabel">
-					<td colspan="3">Total Pembayaran</td>
+					<td><dt>Total Ternak</dt>3</td>
+					<td><dt>Subtotal</dt>Rp 21.000.000</td>
+					<td><dt>Biaya Asuransi</dt>Rp 1.000.000</td>
+					<td><dt>Ongkos Kirim</dt>Rp 1.500.000</td>		
 				</tr>
+			</tbody>
 				<tr>
-					<td>Biaya</td>
-					<td>=</td>
-					<td>Rp 2.700.000</td>
+					<td colspan="6">
+						<div class="row">
+						<div class="col-xs-10"><button class="btn btn-link"><span class="glyphicon glyphicon-trash"> Hapus semua</span></button></div>
+						<div class="col-xs-2">Total = Rp 22.500.000</div>
+						</div></td>		
 				</tr>
-			</table>
+		</table>
+			</div>		
+		
+<div class="table panel panel-default">
+	<dt style="text-align: center;">Pilih Metode Pembayaran</dt>
+	<div class="row">
+		<div class="col-xs-6">
 		</div>
-
-
-		<div class="panel panel-default">
-				<h3>Pilih Metode Pembayaran</h3>
-				<form>
-					<label class="radio-inline"><input type="radio" name="metode" value="Transfer Via ATM" checked>Transer Via ATM</label>
-					<label class="radio-inline"><input type="radio" name="metode" value="Bayar Ditempat">Bayar Ditempat</label>
-				</form>
+		<div class="col-xs-6">
 		</div>
-	<div class="pager">
-		<button type="button" class="btn btn-warning">Kembali</button></li>
-		<button type="button" class="btn btn-success">Bayar</button>
 	</div>
+</div>
 
+<div class="row">
+	<div class="col-xs-11">
+<button type="button" class="btn btn-warning">Kembali</button>
+</div>
+<div class="col-xs-1">
+<button type="button" class="btn btn-success">Bayar</button>
+</div>
+</div>
+</div>
 
-	</section>
-
-	<footer>
-		<h5>Copyright Omahternak.com @2018</h5>
-	</footer>
+<div class="panel-footer">
+	Copyright @2018 | By Omahternak
+</div>
 </body>
 </html>
