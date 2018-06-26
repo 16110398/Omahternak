@@ -164,7 +164,7 @@ ul.dropdown-menu:before{
 }
 
 .btn-info{
-    margin-left: 10px;
+    margin-left: 0px;
     background:#00c300;
     color: #fff;
     border-color: white;
