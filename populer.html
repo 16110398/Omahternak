@@ -121,46 +121,59 @@
 
   <div class="container-fluid">
    <div class="row">
-    <div class="col-sm-3 polaroid">
-      <h4 class="z">Filter Produk : </h4>
-      <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Pilih Kategori
-            <span class="caret"></span></button>
-            <ul class="dropdown-menu dropdown-menu-right">
-                <li><a href="#">Sapi</a></li>
-                <li><a href="#">Kerbau</a></li>
-                <li><a href="#">Kambing</a></li>
-                <li><a href="#">Domba</a></li>
-                <li><a href="#">Angsa</a></li>
-                <li><a href="#">Bebek</a></li>
-                <li><a href="#">Ayam</a></li>
-                <li><a href="#">Burung</a></li>
-                <li><a href="#">Ikan</a></li>
-            </ul>
-      </div>
-      <h4 class="#">Urutkan : </h4>
-      <div class="dropdown">
-            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Terbaru
-            <span class="caret"></span></button>
-            <ul class="dropdown-menu dropdown-menu-right">
-                <li><a href="#">Terbaru</a></li>
-                <li><a href="#">Harga Terendah</a></li>
-                <li><a href="#">Harga Tertinggi</a></li>
-                <li><a href="#">Domba</a></li>
-                <li><a href="#">Angsa</a></li>
-                <li><a href="#">Bebek</a></li>
-                <li><a href="#">Ayam</a></li>
-                <li><a href="#">Burung</a></li>
-                <li><a href="#">Ikan</a></li>
-            </ul>
-      </div>
-      <p class="black">Telusuri Produk </p>
-      <p class="black">Unggas </p>
-      <p class="black">Non Unggas </p>
-      <p class="black">Ikan  </p>
-      <p class="black">Lain - Lain </p>
+    <ol class="breadcrumb">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="index.html">Jual</a></li>
+  <li class="active">Populer</li>
+</ol>
 
-    </div>
+<div class="col-md-12 list-prod-title">
+                                    <h3>Kategori <strong class="text-cap">Populer</strong> (30 Produk)</h3>
+                                <div class="dropdown">
+                  <button class="btn btn-info dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false">Pilih Kategori
+                  <span class="info"></span></button>
+                  <ul class="dropdown-menu">
+                    <li><a href="https://www.agromaret.com/jual">Penjualan</a></li>
+                    <li><a href="https://www.agromaret.com/beli">Investasi</a></li>
+                    <li><a href="https://www.agromaret.com/kerjasama">Permintaan</a></li>
+                  </ul>
+                </div>
+                <hr>
+            </div>
+            <div class="col-sm-2">
+                
+         
+    <div class="col-sm-8 polaroid">
+    <div class="category-sidenav">
+          <p><strong>Filter produk:</strong></p>
+            <select name="filter" id="input" class="form-control" required="required">
+            <option selected="">Pilih kategori</option>
+            <option id="pertanian" value="https://www.agromaret.com/jual/category/pertanian">pertanian</option>
+            <option id="peternakan" value="https://www.agromaret.com/jual/category/peternakan">peternakan</option>
+            <option id="perikanan" value="https://www.agromaret.com/jual/category/perikanan" selected="selected">perikanan</option>
+            <option id="lain-lain" value="https://www.agromaret.com/jual/category/lain-lain">lain-lain</option>
+            </select>
+          <div class="block-xxs"></div>
+          <p><strong>Urutkan:</strong></p>
+          <select name="filter" id="input" class="form-control" required="required">
+          <option value="https://www.agromaret.com/jual/category/perikanan?sortBy=newest">Terbaru</option>
+          <option id="oldest" value="https://www.agromaret.com/jual/category/perikanan?sortBy=oldest">Terlama</option>
+          </select>
+                        
+          <div class="block-xxs"></div>
+          <p><strong>Telusuri produk:</strong></p>
+           
+            <div class="list-group">
+  <a href="#" class="list-group-item">Unggas</a>
+  <a href="#" class="list-group-item">Non Unggas</a>
+    <a href="#" class="list-group-item">Ikan</a>
+
+
+</div>                           
+                                                           
+                  </div>
+                </div>
+            </div>
 
     <div class="col-sm-10">
       <div class="col-sm-3 polaroid">
@@ -303,6 +316,97 @@
             <h5>Celvin</h5>
             <span class="glyphicon glyphicon-map-marker"> Jawa Tengah</span>       
         </div>
+    
+      <div class="col-sm-3 polaroid">
+            <a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+            <h4 style="margin-bottom: 20px;">Angsa</h4>
+            <h4 class="orange">Rp. 13.000.000,-</h4>
+            <p>Minimal Pembelian : </p>
+            <h4 class="green">3 Ekor</h4>
+            <h5>Celvin</h5>
+            <span class="glyphicon glyphicon-map-marker"> Jawa Tengah</span>       
+        </div>
+           <div class="col-sm-3 polaroid">
+            <a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+            <h4 style="margin-bottom: 20px;">Angsa</h4>
+            <h4 class="orange">Rp. 13.000.000,-</h4>
+            <p>Minimal Pembelian : </p>
+            <h4 class="green">3 Ekor</h4>
+            <h5>Celvin</h5>
+            <span class="glyphicon glyphicon-map-marker"> Jawa Tengah</span>       
+        </div>
+         <div class="col-sm-3 polaroid">
+            <a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+            <h4 style="margin-bottom: 20px;">Angsa</h4>
+            <h4 class="orange">Rp. 13.000.000,-</h4>
+            <p>Minimal Pembelian : </p>
+            <h4 class="green">3 Ekor</h4>
+            <h5>Celvin</h5>
+            <span class="glyphicon glyphicon-map-marker"> Jawa Tengah</span>       
+        </div>
+        <div class="col-sm-3 polaroid">
+            <a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+            <h4 style="margin-bottom: 20px;">Angsa</h4>
+            <h4 class="orange">Rp. 13.000.000,-</h4>
+            <p>Minimal Pembelian : </p>
+            <h4 class="green">3 Ekor</h4>
+            <h5>Celvin</h5>
+            <span class="glyphicon glyphicon-map-marker"> Jawa Tengah</span>       
+        </div>
+        <div class="col-sm-3 polaroid">
+            <a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+            <h4 style="margin-bottom: 20px;">Angsa</h4>
+            <h4 class="orange">Rp. 13.000.000,-</h4>
+            <p>Minimal Pembelian : </p>
+            <h4 class="green">3 Ekor</h4>
+            <h5>Celvin</h5>
+            <span class="glyphicon glyphicon-map-marker"> Jawa Tengah</span>       
+        </div>
+           <div class="col-sm-3 polaroid">
+            <a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+            <h4 style="margin-bottom: 20px;">Angsa</h4>
+            <h4 class="orange">Rp. 13.000.000,-</h4>
+            <p>Minimal Pembelian : </p>
+            <h4 class="green">3 Ekor</h4>
+            <h5>Celvin</h5>
+            <span class="glyphicon glyphicon-map-marker"> Jawa Tengah</span>       
+        </div>
+         <div class="col-sm-3 polaroid">
+            <a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+            <h4 style="margin-bottom: 20px;">Angsa</h4>
+            <h4 class="orange">Rp. 13.000.000,-</h4>
+            <p>Minimal Pembelian : </p>
+            <h4 class="green">3 Ekor</h4>
+            <h5>Celvin</h5>
+            <span class="glyphicon glyphicon-map-marker"> Jawa Tengah</span>       
+        </div>
+        <div class="col-sm-3 polaroid">
+            <a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+            <h4 style="margin-bottom: 20px;">Angsa</h4>
+            <h4 class="orange">Rp. 13.000.000,-</h4>
+            <p>Minimal Pembelian : </p>
+            <h4 class="green">3 Ekor</h4>
+            <h5>Celvin</h5>
+            <span class="glyphicon glyphicon-map-marker"> Jawa Tengah</span>       
+        </div>
+        <div class="col-sm-3 polaroid">
+            <a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+            <h4 style="margin-bottom: 20px;">Angsa</h4>
+            <h4 class="orange">Rp. 13.000.000,-</h4>
+            <p>Minimal Pembelian : </p>
+            <h4 class="green">3 Ekor</h4>
+            <h5>Celvin</h5>
+            <span class="glyphicon glyphicon-map-marker"> Jawa Tengah</span>       
+        </div>
+        <div class="col-sm-3 polaroid">
+            <a href="#"><img src="img/sapi2.jpg" class="img-thumbnail"></a>
+            <h4 style="margin-bottom: 20px;">Angsa</h4>
+            <h4 class="orange">Rp. 13.000.000,-</h4>
+            <p>Minimal Pembelian : </p>
+            <h4 class="green">3 Ekor</h4>
+            <h5>Celvin</h5>
+            <span class="glyphicon glyphicon-map-marker"> Jawa Tengah</span>       
+        </div>
         <div class="row">
          <ul class="pagination">
             <li><a href="#">&laquo;</a></li>
@@ -312,6 +416,8 @@
             <li><a href="#">&raquo;</a></li>
         </ul>
       </div>
+
+
         </div>
 
     </div>
