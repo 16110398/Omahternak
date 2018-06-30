@@ -1,9 +1,13 @@
 /*CSS Menu*/
+
+.navbar-inverse{
+   
+}
+
 .navbar-fixed-top{
 	background-color: #05ab11;
 	border-color: #05ab11;
     color: #fff;
-    padding-bottom: 4px;
 }
 
 ul.dropdown-menu:before{
