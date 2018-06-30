@@ -1,20 +1,21 @@
+/*CSS Menu*/
 .navbar-fixed-top{
-    padding-top: 8px;
-    padding-bottom: 3px;
-    background: #00c300;
-    	
+	background-color: #05ab11;
+	border-color: #05ab11;
+    color: #fff;
+    padding-bottom: 4px;
 }
 
 ul.dropdown-menu:before{
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
     background-size: 100%;
     background-repeat: no-repeat;
     content: " ";
     display: inline-block;
     position: relative;
     top: -10px;
-    left: 65px;
+    left: 75px;
     z-index: 0;
     border-left: 10px solid #fff;
     border-bottom: 10px solid #fff;
@@ -23,17 +24,89 @@ ul.dropdown-menu:before{
     transition: none;
 }
 
-.orange{
-    color:orange;
-}
-.green{
-    color: green;
-}
-
-.panel1{
-    padding-bottom: 20px;
+.btn-signup{
+    background:#05ab11;
+    color: #fff;
+    border-color: white;
 }
 
+.btn-signup:hover{
+    background: #ebebeb;
+    color: #000;
+    border-color: white;
+}
+
+ul li a{
+	display: block;
+	text-decoration: none;
+    color: black;
+
+}
+
+ul li a:hover{
+	background: #eee;
+	color: black;
+    text-decoration: none;
+}
+
+/*Button*/
+.formdaftar{
+    width: 400px;
+
+}
+.classinputlogin{
+    height: 45px;
+}
+.border-p{
+    border-top: 1px solid;
+    color: #e1e1e1;
+    background: #fff;
+    margin-top: 30px;
+}
+
+.daftarp{
+    text-align: center;
+    color: #bdbcbc;
+    width: 50px;
+    margin: 10px auto 0;
+    background: #fff;
+    position: relative;
+    bottom: 20px;
+}
+.btndaftar{
+    width: 400px;
+    height: 45px;
+    font-size: 18px;
+}
+.btnloginsosmed{
+    background: #eee;
+}
+
+.btnloginsosmed:hover{
+    background: #eee;
+    color: #00c300;
+}
+
+
+/*css Produk*/
+.polaroid {
+    padding: 10px;
+    margin: 6px;
+    width: 190px;
+    height: 315px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0), 0 3px 7px 0 rgba(0, 0, 0, 0.10); 
+}
+
+.polaroid:hover{
+    background-color: #fff;
+    border-radius: 5px;
+    transition: .5s;
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19); 
+    
+}
+
+/*Panel Produk*/
 .panelterbaru{
     margin-top: 10px;
     margin-right: 25px;
@@ -62,7 +135,6 @@ ul.dropdown-menu:before{
     border-radius: 10px;
 }
 
-
 .panelikan{
     margin-top: 10px;
     margin-right: 25px;
@@ -70,41 +142,45 @@ ul.dropdown-menu:before{
     border-radius: 10px;
 }
 
-.imgpanel2{
-   padding-left: 1000px;
+.panel1{
+    padding-bottom: 20px;
 }
-
-.h3panel{
-    margin-left: 10px;
-    color: white;
-}
-
-
-.polaroid {
-	padding: 10px;
-	margin: 6px;
-	width: 190px;
-	height: 315px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0), 0 3px 7px 0 rgba(0, 0, 0, 0.10); 
-}
-
-.polaroid:hover{
-    background-color: #fff;
-	border-radius: 5px;
-    transition: .5s;
-    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19); 
-    
-}
-
 .paddingpanel{
-	padding-left: 25px;
+    padding-left: 23px;
 }
 
-.colortextpanel{
-    color: white;
+/*Panel Kategori*/
+.panelkategori{
+    padding-top: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
+.panel-collapse{
+    margin:5px;
+    padding: 0;
+}
+
+.paneltxt a{
+    color: #6a6a6a;
+    list-style: none;
+    text-decoration:none;
+}
+.paneltxt a:hover{
+    color: #00c300;
+    list-style: none;
+    text-decoration:none;
+}
+.panel-danger, .panel-success, .panel-info{
+    padding-top: 10px;
+}
+
+.label-success, .label-danger, .label-info{
+    margin-left: 10px;
+    padding-bottom: 5px;
+}
+
+/*Panel Sosmed*/
 .panelfootersosmed ul{
     display: flex;
     margin: 0;
@@ -121,9 +197,9 @@ ul.dropdown-menu:before{
     text-decoration: none;
     line-height: 25px;
     padding-right: 5px;
-
 }
 
+/*Panel Omahternak*/
 .panelbawah ul li{
     list-style: none;
 }
@@ -136,117 +212,14 @@ ul.dropdown-menu:before{
 
 .panelbawah ul li a:hover{
     font-weight: bold;
+    background: #00c300;
+}
 
+.colortextpanel{
+    color: white;
 }
 
 .paddingtxt-panelbottom{
     padding-left: 5px;
     padding-right: 5px;
-}
-
-
-.imgnav{
-    width: 250px;
-    padding-right: 40px;
-    padding-left: 20px;
-}
-
-.cari{
-    margin-top: 5px;
-}
-
-.btndftrmsk {
-    padding-left: 50px;
-}
-
-.btnpanel{
-    margin-top: 20px;
-}
-
-.btn-info{
-    margin-left: 5px;
-    background:#00c300;
-    color: #fff;
-    border-color: white;
-}
-
-.btn-info:hover{
-    background: #ebebeb;
-    color: #000;
-}
-
-.carouselimg{
-    margin-top: 70px;
-}
-
-.btndaftar{
-    width: 400px;
-    height: 45px;
-    font-size: 18px;
-}
-
-.formdaftar{
-    width: 400px;
-
-}
-
-.border-p{
-    border-top: 1px solid;
-    color: #e1e1e1;
-    background: #fff;
-    margin-top: 30px;
-}
-
-.daftarp{
-    text-align: center;
-    color: #bdbcbc;
-    width: 50px;
-    margin: 10px auto 0;
-    background: #fff;
-    position: relative;
-    bottom: 20px;
-}
-
-.btnloginsosmed{
-    background: #eee;
-}
-
-.btnloginsosmed:hover{
-    background: #eee;
-    color: #00c300;
-}
-
-.classinputlogin{
-    height: 45px;
-}
-
-.panel-collapse{
-    margin:5px;
-    padding: 0;
-}
-    
-.paneltxt a{
-    color: #6a6a6a;
-    list-style: none;
-    text-decoration:none;
-}
-.paneltxt a:hover{
-    color: #00c300;
-    list-style: none;
-    text-decoration:none;
-}
-
-.panelkategori{
-    padding-top: 5px;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-.panel-danger, .panel-success, .panel-info{
-    padding-top: 10px;
-}
-
-.label-success, .label-danger, .label-info{
-    margin-left: 10px;
-    padding-bottom: 5px;
 }
