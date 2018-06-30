@@ -1,14 +1,16 @@
 /*CSS Menu*/
 
 .navbar-inverse{
-   
+
 }
 
 .navbar-fixed-top{
 	background-color: #05ab11;
 	border-color: #05ab11;
     color: #fff;
+    height: 60px;
 }
+
 
 ul.dropdown-menu:before{
     width: 20px;
