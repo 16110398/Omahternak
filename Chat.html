@@ -2,87 +2,69 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<title>OmahTernak.com</title>
-	<link rel="icon" type="image/png" href="img/icon/omahternak1.png">
-
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/han.css">
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" id="bootstrap-css">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/style.css">
-	<script src="bootstrap/js/jquery.min.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script type="text/javascript">
-    	$(document).ready(function(e){
-   			$('.search-panel .dropdown-menu').find('a').click(function(e) {
-				e.preventDefault();
-				var param = $(this).attr("href").replace("#","");
-				var concept = $(this).text();
-				$('.search-panel span#search_concept').text(concept);
-				$('.input-group #search_param').val(param);
-			});
-		});
-    </script>
+	<title>Tempat Jual Beli Ternak dan Investasi Ternak Terpercaya | Omahternak.com</title>
+  	  <link rel="icon" type="image/png" href="img/icon/omahternak1.png">
+	  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	  <link rel="stylesheet" href="bootstrap/css/style.css">
+	  <link rel="stylesheet" href="bootstrap/css/han.css">
+	  <script src="bootstrap/js/jquery.min.js"></script>
+	  <script src="bootstrap/js/popper.min.js"></script>
+	  <script src="bootstrap/js/bootstrap.min.js"></script>
 
 </head>
 <body>
 
-	<nav class="navbar navbar-fixed-top" role="navigation">
-  	<div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-1 nav-brand imgnav">
-      <img src="img/icon/omahternak2.png" alt="OmahTernak" title="Omahternak" class="img-responsive">
-      </div>
-
-        <div class="col-xs-6 cari">
-        <div class="input-group">
-                <div class="input-group-btn search-panel">
-                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="margin-bottom: 7px;" >
-                      <span id="search_concept" >Kategori </span><span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu " role="menu">
-                      <li role="presentation"><a href="#">Angsa</a></li>
-                      <li role="presentation"><a href="#">Ayam</a></li>
-                      <li role="presentation"><a href="#">Bebek</a></li>
-                      <li role="presentation"><a href="#">Burung</a></li>
-                      <li role="presentation"><a href="#">Domba</a></li>
-                      <li role="presentation"><a href="#">Ikan</a></li>
-                      <li role="presentation"><a href="#">Kambing</a></li>
-                      <li role="presentation"><a href="#kerbau">Kerbau</a></li>
-                      <li role="presentation"><a href="#sapi">Sapi</a></li>
-                      <li role="presentation" class="divider"></li>
-                      <li role="presentation"><a href="#all">Lain-Lain</a></li>
-                    </ul>
-                </div>
-
-                <input type="hidden" name="search_param" value="all" id="search_param">         
-                <input type="text" class="form-control" name="x" placeholder="Cari ternak...">
-                <span class="input-group-btn">
-                    <button class="btn btn-default" type="button" style="margin-bottom: 7px;">Cari</button>
-                </span>
-            </div>
-        </div>
-
-        <div class="col-xs-0 col-dm-2 cari">
-        <button type="button" class="btn btn-default right">Daftar</button>
-        <button type="button" class="btn btn-warning right">Masuk</button>
-        <a href="#"><img src="img/msg.png" class="msg right"></a>
-        </div>
- 	 </div>
-	</div>
+	<nav class="navbar navbar-expand-sm bg-success navbar-dark fixed-top">
+		<a class="navbar-brand" href="#">
+	    	<img src="img/icon/omahternak2.png" alt="logo" style="width:160px;">
+	  	</a>
+	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+  		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+	  		<ul class="navbar-nav" style="margin-right:1%;">
+			    <!-- Dropdown -->
+			    <li class="nav-item dropdown">
+			      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="color:white;">
+			        Kategori
+			      </a>
+			      <div class="dropdown-menu" style="margin-top:10px;">
+			        <a class="dropdown-item" href="#">Sapi</a>
+			        <a class="dropdown-item" href="#">Kerbau</a>
+			        <a class="dropdown-item" href="#">Kambing</a>
+			        <a class="dropdown-item" href="#">Domba</a>
+			        <a class="dropdown-item" href="#">Ayam</a>
+			        <a class="dropdown-item" href="#">Bebek</a>
+			        <a class="dropdown-item" href="#">Angsa</a>
+			        <a class="dropdown-item" href="#">Itik</a>
+			        <a class="dropdown-item" href="#">Burung</a>
+			        <a class="dropdown-item" href="#">Lebah Madu</a>
+			        <a class="dropdown-item" href="#">Ikan</a>
+			        <a class="dropdown-item" href="#">Belut</a>
+			        <a class="dropdown-item" href="#">Udang</a>
+			        <a class="dropdown-item" href="#">Kepiting</a>
+			      </div>
+			    </li>
+	  		</ul>
+	  		<div class="input-group" style="width:60%; margin-left:1%;">
+			    <input type="text" class="form-control" placeholder="Cari ternak ... ?">
+				<div class="input-group-append">
+					<button class="btn btn-warning" type="submit">Cari</button>  
+				</div>
+			</div>
+			<img src="img/icon/baseline-chat-24px.svg" style="margin-left:3%;">
+			<a href="daftar.html" class="btn btn-default btn-signup" type="submit">Daftar</a>
+			<a href="login.html" class="btn btn-warning" type="submit">Masuk</a>
+		</div>
 	</nav>
 
 
-
-
-<div class="container">
-
-<br>
-<br>
-<br>
-	<div class="grid-1"><a href="#"><img src="img/1.jpg" alt="Avatar" style="width:100%; border-radius: 50%;"></a></div>
-	<div class="grid-1"><a href="#"><img src="img/2.jpg" alt="Avatar" style="width:100%; border-radius: 50%;"></a></div>
-	<div class="grid-1"><a href="#"><img src="img/1.jpg" alt="Avatar" style="width:100%; border-radius: 50%;"></a></div>
-	<div class="grid-1"><a href="#"><img src="img/2.jpg" alt="Avatar" style="width:100%; border-radius: 50%;"></a></div>
-	<div class="grid-1"><a href="#"><img src="img/1.jpg" alt="Avatar" style="width:100%; border-radius: 50%;"></a></div>
+<div class="container" style="padding-top:75px;">
+	<div class="grid-1"><a href="#"><img src="img/chat/1.jpg" alt="Avatar" style="width:100%; border-radius: 50%;"></a></div>
+	<div class="grid-1"><a href="#"><img src="img/chat/2.jpg" alt="Avatar" style="width:100%; border-radius: 50%;"></a></div>
+	<div class="grid-1"><a href="#"><img src="img/chat/1.jpg" alt="Avatar" style="width:100%; border-radius: 50%;"></a></div>
+	<div class="grid-1"><a href="#"><img src="img/chat/2.jpg" alt="Avatar" style="width:100%; border-radius: 50%;"></a></div>
+	<div class="grid-1"><a href="#"><img src="img/chat/1.jpg" alt="Avatar" style="width:100%; border-radius: 50%;"></a></div>
 
 
 	<div class="container2 left">
@@ -126,85 +108,83 @@
 	</div>
 </div>
 	
-	<div class="panel-footer x2">
-	<div class="container-fluid">
+<div class="panel-footer panelfootersosmed">
+	  <div class="container-fluid">
+	  <div class="row">
+	    <div class="col-md-3">
+	      <img src="img/icon/omahternak2.png" alt="OmahTernak" title="Omahternak" style="width:80%; margin-top:2%;">
+	    </div>
 
-		<div class="col-md-3 col-sm-3">
-			<img src="img/icon/omahternak2.png" alt="OmahTernak" title="Omahternak" class="img-responsive">
-		</div>
-      <div class="col-sm-1"></div>
-		<div class="col-sm-5 col-sm-4">
-				<h5>Metode Pembayaran Rekening Bersama : </h5>
-				<a href="#"><img src="img/iconsosmed/bank.png" class="img-responsive" alt="Rekening bersama Omahternak" title="Bank Transfer Omahternak"></a></li>
-		</div>
-      <div class="col-sm-1"></div>
+	    <div class="col-sm-6" style="padding-left:10%;">
+	        <h6>Metode Pembayaran Rekening Bersama : </h6>
+	        <a href="#"><img src="img/iconsosmed/bank.png" alt="Rekening bersama Omahternak" title="Bank Transfer Omahternak" style="width:70%;"></a></li>
+	    </div>
 
-		<div class="col-md-3 col-sm-3">
-			<h5>Ikuti Kami : </h5>
-				<ul>
-					<li><a rel="follow" target="_blank" href="#"><img alt="facebook omahternak" title="Facebook Omahternak" src="img/iconsosmed/facebook.png" width="30px"></a></li>
+	    <div class="col-sm-3" style="padding-left:5%;">
+	      <h6>Ikuti Kami : </h6>
+	        <ul>
+	          <li><a rel="follow" target="_blank" href="#"><img alt="facebook omahternak" title="Facebook Omahternak" src="img/iconsosmed/facebook.png" width="30px"></a></li>
 
-					<li><a rel="follow" target="_blank" href="#"><img alt="twitter omahternak" title="Twitter Omahternak" src="img/iconsosmed/twitter.png" width="30px"></a></li>
+	          <li><a rel="follow" target="_blank" href="#"><img alt="twitter omahternak" title="Twitter Omahternak" src="img/iconsosmed/twitter.png" width="30px"></a></li>
 
-					<li><a rel="follow" target="_blank" href="#"><img alt="instagram omahternak" title="Instagram Omahternak" src="img/iconsosmed/instagram.png" width="30px"></a></li>
+	          <li><a rel="follow" target="_blank" href="#"><img alt="instagram omahternak" title="Instagram Omahternak" src="img/iconsosmed/instagram.png" width="30px"></a></li>
 
-					<li><a rel="follow" target="_blank" href="#"><img alt="youtube omahternK" title="Youtube Omahternak" src="img/iconsosmed/youtube.png" width="30px"></a></li>
+	          <li><a rel="follow" target="_blank" href="#"><img alt="youtube omahternK" title="Youtube Omahternak" src="img/iconsosmed/youtube.png" width="30px"></a></li>
 
-					<li><a rel="follow" target="_blank" href="#"><img alt="google plus omahternak" title="Google Plus Omahtenak" src="img/iconsosmed/google-plus.png" width="30px"></a></li>
-				</ul>
-			</div>
-			
-		</div>
-		</div>
+	          <li><a rel="follow" target="_blank" href="#"><img alt="google plus omahternak" title="Google Plus Omahtenak" src="img/iconsosmed/google-plus.png" width="30px"></a></li>
+	        </ul>
+	      </div>
+	     </div> 
+	    </div>
+	 </div>
+<!--About Omahternak-->
+  <div class="container-fluid bg-success">
+    <div class="row panelbawah colortextpanel" style="padding-top:2%; padding-bottom:1%;">
+      <div class="col-sm-3 col-md-3 text-justify">
+        <h5 class="paddingtxt-panelbottom">Hubungi Kami</h5>
+        <ul class="paddingtxt-panelbottom">
+        <li><strong>Omahternak.com</strong> adalah Tempat Jual Beli Ternak dan Investasi Ternak Terpercaya.</li>
+        <li>Jl. Bibis No.25, Bangunjiwo, Kasihan, Bantul, D.I Yogyakarta</li>
+        <li>cs@omahternak.com</li>
+        <li>Jam Layanan: 08.00-17.00 WIB</li>
+        </ul>
+      </div>
 
-	<div class="container-fluid" style="background-color:#00c300";>
-		<div class="row x1 y">
-    <br/>
-			<div class="col-md-3 col-sm-2 text-justify">
-				<h4 class="z">Hubungi Kami</h4>
-				<ul class="z">
-				<li><strong>Omahternak.com</strong> adalah Tempat Jual Beli Ternak dan Investasi Ternak Terpercaya.</li>
-				<li>Jl. Bibis No.25, Bangunjiwo, Kasihan, Bantul, D.I Yogyakarta</li>
-				<li>cs@omahternak.com</li>
-				<li>Jam Layanan: 08.00-17.00 WIB</li>
-				</ul>
-			</div>
+      <div class="col-sm-2 col-md-2">
+      <h5 class="paddingtxt-panelbottom">Panduan Umum</h5>
+        <ul class="paddingtxt-panelbottom">
+        <li><a href="#" title="About us">Tentang Omahternak</a></li>
+        <li><a href="#" title="FAQ">FAQ</a></li>
+        <li><a href="#" title="FAQ">Panduan Omahternak</a></li>
+        <li><a target='_blank' href="#" title="Blog">Blog</a></li>
+        </ul>
+      </div>
 
-			<div class="col-md-2 col-sm-2">
-			<h4 class="z">Panduan Umum</h4>
-				<ul class="z">
-				<li><a href="#" title="About us">Tentang Omahternak</a></li>
-				<li><a href="#" title="FAQ">FAQ</a></li>
-				<li><a href="#" title="FAQ">Panduan Omahternak</a></li>
-				<li><a target='_blank' href="#" title="Blog">Blog</a></li>
-				</ul>
-			</div>
-
-			<div class="col-md-2 col-sm-3">
-				<h4 class="z">Pembeli / Penjual</h4>
-				<ul class="z">
-				<li><a target="_blank" href="#">Beli di Omah ternak</a></li>
+      <div class="col-sm-2 col-md-2">
+        <h5 class="paddingtxt-panelbottom">Pembeli / Penjual</h5>
+        <ul class="paddingtxt-panelbottom">
+        <li><a target="_blank" href="#">Cara Beli di Omah ternak</a></li>
         <li><a target="_blank" href="#">Jualan di Omah ternak</a></li>
-				<li><a target="_blank" href="#">Pengembalian Barang (Pembeli)</a></li>
-				<li><a target="_blank" href="#">Pengembalian Barang (Penjual)</a></li>
-				</ul>
-			</div>
+        <li><a target="_blank" href="#">Pengembalian Barang (Pembeli)</a></li>
+        <li><a target="_blank" href="#">Pengembalian Barang (Penjual)</a></li>
+        </ul>
+      </div>
 
-      <div class="col-md-2 col-sm-2">
-        <h4 class="z">Investasi</h4>
-        <ul class="z">
+      <div class="col-sm-2 col-md-2">
+        <h5 class="paddingtxt-panelbottom">Investasi</h5>
+        <ul class="paddingtxt-panelbottom">
         <li><a target="_blank" href="#i">Panduan Investasi di Omah ternak</a></li>
         </ul>
       </div>
 
-			<div class="col-md-3 col-sm-3 text-justify">
-				<h4 class="z">Download aplikasi Omahternak <br>di Play Store sekarang.</h4>
-				<ul class="z"><li><a href='#'><img class="img-responsive" alt='Temukan di Google Play' src='img/iconsosmed/id_badge_web_generic.png'/></a></li></ul>
-			</div>
+      <div class="col-sm-3 col-md-3 text-justify">
+        <h5 class="paddingtxt-panelbottom">Download aplikasi Omahternak di Play Store sekarang.</h5>
+        <ul class="paddingtxt-panelbottom"><li><a href='#'><img class="img-responsive" alt='Temukan di Google Play' src='img/iconsosmed/id_badge_web_generic.png'/></a></li></ul>
+      </div>
 
-		</div>
-	</div>
-
+    </div>
+  </div>
+	<!--Footer-->
 <div class="panel-footer">&copy; 2018 Omahternak.com</div>
 
 </body>

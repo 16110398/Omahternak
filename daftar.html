@@ -3,83 +3,129 @@
 <head>
 	<title>Ayo Daftar dan Jual Beli Investasi di Omahternak</title>
 	<link rel="icon" type="image/png" href="img/icon/omahternak1.png">
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" id="bootstrap-css">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/style.css">
-	<script src="bootstrap/js/jquery.min.js"></script>
+	  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	  <script src="bootstrap/js/jquery.min.js"></script>
+	  <script src="bootstrap/js/popper.min.js"></script>
+	  <script src="bootstrap/js/bootstrap.min.js"></script>
+	  <style type="text/css">
+	  	/*Button*/
+			.formdaftar{
+			    width: 400px;
+			    padding-top: 20px;
+
+			}
+			.classinputlogin{
+			    height: 45px;
+			}
+			.border-p{
+			    border-top: 1px solid;
+			    color: #e1e1e1;
+			    background: #fff;
+			    margin-top: 30px;
+			    width: 400px;
+			}
+
+			.daftarp{
+			    text-align: center;
+			    color: #bdbcbc;
+			    width: 50px;
+			    margin: 10px auto 0;
+			    background: #fff;
+			    position: relative;
+			    bottom: 23px;
+			    margin-left: 175px;
+			}
+			.btndaftar{
+			    width: 400px;
+			    height: 45px;
+			    font-size: 18px;
+			}
+
+			.isiandaftar{
+			    width: 400px;
+			    height: 40px;
+			    font-size: 16px;
+			}
+
+			.btnloginsosmed{
+			    background: #eee;
+			}
+
+			.btnloginsosmed:hover{
+			    background: #eee;
+			    color: #00c300;
+			}
+		
+
+	  </style>
+
+
 </head>
 <body>
 
-	<div class="container formdaftar"> 
-		<div class="row formdaftar" align="center" style=" padding-top:20px">
-		<img src="img/icon/omahternak2.png" class="img-responsive" width="60%" >
-		<h4 style="padding-top:30px; padding-bottom:30px; color:#00c300;"><strong>Daftar akun baru sekarang</strong></h4>
-		</div>
-	</div>
-
 	<div class="container formdaftar">
-	<div class="row formdaftar">
-	 <div class="form-group">
-	  	<label for="usr">Nama:</label>
-	  	<input type="text" class="form-control" id="usr" placeholder="Nama Lengkap" required="w">
-	</div>
-	<div class="form-group">
-	  	<label for="email">Email:</label>
-	  	<input type="text" class="form-control" id="email" placeholder="Email">
+		<img src="img/icon/omahternak2.png" width="60%" style="margin-left:75px;">
+		  <h5 style="padding-top:30px; padding-bottom:30px; color:#00c300; margin-left:70px;"><strong>Daftar akun baru sekarang</strong></h5>
+		  <form action="#">
+		  		 <div class="form-group">
+					<label for="usr">Nama:</label>
+					<input type="text" class="form-control" id="usr" placeholder="Masukkan nama lengkap anda" required="Masukkan Nama" style="width:400px;">
+				 </div>
+		  		
+				 <div><label for="email">Jenis Kelamin:</label></div>
+		  		<div class="form-check-inline">
+			      <label class="form-check-label" for="radio1">
+			        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked>Laki-laki
+			      </label>
+			    </div>
+			    <div class="form-check-inline">
+			      <label class="form-check-label" for="radio2">
+			        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Perempuan
+			      </label>
+			    </div>
+
+			    <div class="form-group">
+			      <label for="email">Email:</label>
+			      <input type="email" class="form-control isiandaftar" id="email" placeholder="Email" name="email" required="Masukan Email">
+			    </div>
+			    <label for="email">Password:</label>
+			    <div class="form-group">
+			      <input type="password" class="form-control isiandaftar" id="pwd" placeholder="Password Omahternak" name="pswd" required="Masukan Password">
+			    </div>
+			    <label for="email">Konfirmasi Password:</label>
+			    <div class="form-group">
+			      <input type="password" class="form-control isiandaftar" id="pwd" placeholder="Konfirmasi Password" name="pswd" required="Masukan Password">
+			    </div>
+			    <div class="form-group">
+					<label for="nohp">No HP:</label>
+					<input type="number" class="form-control" id="number" placeholder="Masukkan no HP anda" style="width:400px;">
+				 </div>
+
+			    <label for="sel1">Jenis Daftar:</label>
+			      <select class="form-control" id="sel1" style="width:400px;">
+			        <option>Pilih Jenis Daftar</option>
+			        <option>Pembeli</option>
+			        <option>Penjual</option>
+			        <option>Investor</option>
+			      </select>
+			     
+			      <div class="form-group">
+			      	  <label for="email">Alamat:</label>
+					  <textarea class="form-control" rows="5" id="comment" style="width:400px;" placeholder="Masukan Alamat Anda"></textarea>
+				  </div> 
+
+			    <p>Dengan klik daftar, kamu telah menyetujui <a style="color:green;" href="#">Aturan Penggunaan</a> dan <a style="color:green;" href="#">Kebijakan Privasi</a> dari Omahternak</p>
+			    <button type="submit" class="btn btn-success btndaftar">Daftar</button>
+
+			    <div class="border-p"></div>
+				<p class="daftarp"> ATAU </p>
+
+			    <a href="#"><button class="btn btn-default btndaftar btnloginsosmed" style="margin-bottom:10px;"><img src="img/icon/fblogo.png" style="float:left;">Daftar dengan Facebook</button></a>
+				<a href="#"><button class="btn btn-default btndaftar btnloginsosmed" style="margin-bottom:10px;"><img src="img/icon/glogo.png" style="float:left;">Daftar dengan Google</button></a>
+				<p style="margin-left:70px;">Sudah punya akun? <a style="color:green;" href="login.html">Silahkan Login</a></p>
+	  		</form>
 	</div>
 
-	<div class="form-group">
-  		<label for="pwd">Password:</label>
-  		<input type="password" class="form-control" id="pwd" placeholder="Password Omahternak">
-	</div> 
 
-	<div class="form-group">
-  		<label for="pwd">Konfirmasi Password:</label>
-  		<input type="password" class="form-control" id="pwd" placeholder="Konfirmasi Password">
-	</div> 
-
-	<div class="form-group">
-	  	<label for="nohp">No HP:</label>
-	  	<input type="number" class="form-control" id="number" placeholder="Nomor Handphone">
-	</div>
-
-	
-	<label for="gender">Jenis Kelamin:</label>
-	<div class="row">
-	<div class="col-sm-3">
-	<div class="radio">
-	  	<label><input type="radio" name="optradio">Laki-Laki</label>
-	</div>
-	</div>
-
-	<div class="col-sm-2">
-	<div class="radio">
-	  	<label><input type="radio" name="optradio">Perempuan</label>
-	</div>
-	</div>
-	</div>
-	<br/ >
-	<label for="sel1">Jenis Daftar</label>
-      <select class="form-control" id="sel1" >
-        <option>Pembeli</option>
-        <option>Penjual</option>
-        <option>Investor</option>
-      </select>
-      <br/>
-     <div class="form-group">
-	  <label for="comment">Alamat:</label>
-	  <textarea class="form-control" rows="5" id="comment" placeholder="Alamat Lengkap"></textarea>
-	</div> 
-	<p>Dengan klik daftar, kamu telah menyetujui <a style="color:green;" href="#">Aturan Penggunaan</a> dan <a style="color:green;" href="#">Kebijakan Privasi</a> dari Omahternak</p>
-	<button class="btn btn-success btndaftar" type="submit" value="daftar"><strong>Daftar</strong></button>
-
-	<div class="border-p"></div>
-	<p class="daftarp"> ATAU </p>
-	
-	<a href="#"><button class="btn btn-default btndaftar btnloginsosmed" style="margin-bottom:10px;"><img src="img/icon/fblogo.png" style="float:left;">Daftar dengan Facebook</button></a>
-	<a href="#"><button class="btn btn-default btndaftar btnloginsosmed" style="margin-bottom:10px;"><img src="img/icon/glogo.png" style="float:left;">Daftar dengan Google</button></a>
-
-	<p>Sudah punya akun? <a style="color:green;" href="login.html">Silahkan Login</a></p>
-	</div>
-	</div>
 </body>
 </html>

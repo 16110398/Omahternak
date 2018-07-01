@@ -3,38 +3,77 @@
 <head>
 	<title>Login Omahternak</title>
 	<link rel="icon" type="image/png" href="img/icon/omahternak1.png">
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" id="bootstrap-css">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/style.css">
-	<script src="bootstrap/js/jquery.min.js"></script>
+	  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	  <script src="bootstrap/js/jquery.min.js"></script>
+	  <script src="bootstrap/js/popper.min.js"></script>
+	  <script src="bootstrap/js/bootstrap.min.js"></script>
+	  <style type="text/css">
+	  	/*Button*/
+			.formdaftar{
+			    width: 400px;
+			    padding-top: 20px;
+
+			}
+			.classinputlogin{
+			    height: 45px;
+			}
+			.border-p{
+			    border-top: 1px solid;
+			    color: #e1e1e1;
+			    background: #fff;
+			    margin-top: 30px;
+			    width: 400px;
+			}
+
+			.daftarp{
+			    text-align: center;
+			    color: #bdbcbc;
+			    width: 50px;
+			    margin: 10px auto 0;
+			    background: #fff;
+			    position: relative;
+			    bottom: 23px;
+			    margin-left: 175px;
+			}
+			.btndaftar{
+			    width: 400px;
+			    height: 45px;
+			    font-size: 18px;
+			}
+			.btnloginsosmed{
+			    background: #eee;
+			}
+
+			.btnloginsosmed:hover{
+			    background: #eee;
+			    color: #00c300;
+			}
+		
+
+	  </style>
 </head>
 <body>
-	<div class="container formdaftar"> 
-		<div class="row formdaftar" align="center" style=" padding-top:20px">
-		<img src="img/icon/omahternak2.png" class="img-responsive" width="60%" >
-		<h4 style="padding-top:30px; padding-bottom:30px; color:#00c300;"><strong>Silakan masuk ke dalam akun anda</strong></h4>
-		</div>
-	</div>
-
 	<div class="container formdaftar">
-	<div class="row formdaftar">
-	<div class="form-group">
-	  	<input type="text" class="form-control classinputlogin" id="email" placeholder="Email">
+		<img src="img/icon/omahternak2.png" width="60%" style="margin-left:70px;">
+		  <h5 style="padding-top:30px; padding-bottom:30px; color:#00c300; margin-left:35px;"><strong>Silakan masuk ke dalam akun anda</strong></h5>
+		  <form action="#">
+			    <div class="form-group">
+			      <input type="email" class="form-control btndaftar" id="email" placeholder="Email" name="email" required="Masukan Email">
+			    </div>
+			    <div class="form-group">
+			      <input type="password" class="form-control btndaftar" id="pwd" placeholder="Password Omahternak" name="pswd" required="Masukan Password">
+			    </div>
+			    <p><a style="color:green;" href="#">Lupa Password?</a></p>
+			    <button type="submit" class="btn btn-success btndaftar">Login</button>
+
+			    <div class="border-p"></div>
+				<p class="daftarp"> ATAU </p>
+
+			    <a href="#"><button class="btn btn-default btndaftar btnloginsosmed" style="margin-bottom:10px;"><img src="img/icon/fblogo.png" style="float:left;">Login dengan Facebook</button></a>
+				<a href="#"><button class="btn btn-default btndaftar btnloginsosmed" style="margin-bottom:10px;"><img src="img/icon/glogo.png" style="float:left;">Login dengan Google</button></a>
+				<p style="margin-left:60px;">Belum punya akun? <a style="color:green;" href="daftar.html">Daftar Sekarang</a></p>
+	  		</form>
 	</div>
 
-	<div class="form-group">
-  		<input type="password" class="form-control classinputlogin" id="pwd" placeholder="Password Omahternak">
-	</div> 
-	<p><a style="color:green;" href="#">Lupa Password?</a></p>
-	<button class="btn btn-success btndaftar" type="submit" value="daftar"><strong>Login</strong></button>
-
-	<div class="border-p"></div>
-	<p class="daftarp"> ATAU </p>
-	
-	<a href="#"><button class="btn btn-default btndaftar btnloginsosmed" style="margin-bottom:10px;"><img src="img/icon/fblogo.png" style="float:left;">Login dengan Facebook</button></a>
-	<a href="#"><button class="btn btn-default btndaftar btnloginsosmed" style="margin-bottom:10px;"><img src="img/icon/glogo.png" style="float:left;">Login dengan Google</button></a>
-
-	<p>Belum punya akun? <a style="color:green;" href="daftar.html">Daftar Sekarang</a></p>
-	</div>
-	</div>
 </body>
 </html>
