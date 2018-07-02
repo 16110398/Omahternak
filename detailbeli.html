@@ -1,42 +1,242 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" id="bootstrap-css">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/style.css">
-	<script src="bootstrap/js/jquery.min.js"></script>
+  <title>Detail Beli | Omahternak.com</title>
+   <link rel="icon" type="image/png" href="img/icon/omahternak1.png">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/style.css">
+      <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" id="bootstrap-css">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/style.css">
+  
+  <script src="bootstrap/js/jquery.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/jquery.min.js"></script>
+    <script src="bootstrap/js/popper.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <style type="text/css">
+      .form-control{
+        width: 200px;
+      }
+    </style>
 </head>
 <body>
+  <nav class="navbar navbar-expand-sm bg-success navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">
+        <img src="img/icon/omahternak2.png" alt="logo" style="width:160px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav" style="margin-right:1%;">
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="color:white;">
+              Kategori
+            </a>
+            <div class="dropdown-menu" style="margin-top:10px;">
+              <a class="dropdown-item" href="#">Sapi</a>
+              <a class="dropdown-item" href="#">Kerbau</a>
+              <a class="dropdown-item" href="#">Kambing</a>
+              <a class="dropdown-item" href="#">Domba</a>
+              <a class="dropdown-item" href="#">Ayam</a>
+              <a class="dropdown-item" href="#">Bebek</a>
+              <a class="dropdown-item" href="#">Angsa</a>
+              <a class="dropdown-item" href="#">Itik</a>
+              <a class="dropdown-item" href="#">Burung</a>
+              <a class="dropdown-item" href="#">Lebah Madu</a>
+              <a class="dropdown-item" href="#">Ikan</a>
+              <a class="dropdown-item" href="#">Belut</a>
+              <a class="dropdown-item" href="#">Udang</a>
+              <a class="dropdown-item" href="#">Kepiting</a>
+            </div>
+          </li>
+        </ul>
+        <div class="input-group" style="width:60%; margin-left:1%;">
+          <input type="text" class="form-control" placeholder="Cari ternak ... ?">
+        <div class="input-group-append">
+          <button class="btn btn-warning" type="submit">Cari</button>  
+        </div>
+      </div>
+      <img src="img/icon/baseline-shopping_cart-24px.svg" style="margin-left:3%;">
+      <a href="daftar.html" class="btn btn-default btn-signup" type="submit">Daftar</a>
+      <a href="login.html" class="btn btn-warning" type="submit">Masuk</a>
+    </div>
+  </nav>
 
+    <div id="demo" class="carousel slide" data-ride="carousel" style="margin-top:74px;">
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/slide/gam1.png" alt="Los Angeles" style="width:100%;">
+        <div class="carousel-caption">
+          <h4><strong>Temukan Berbagai Jenis Ternak di Omahternak.com</strong></h4>
+        </div>   
+      </div>
+      <div class="carousel-item">
+        <img src="img/slide/gam2.png" alt="Chicago" style="width:100%;">
+        <div class="carousel-caption">
+          <h4><strong>Dapatkan Hewan Ternak dengan Kualitas Super</strong></h4>
+            <p>Dapatkan Berbagai Hewan Ternak dengan Kualitas Terbaik Hanya di Omahternak</p>
+        </div>   
+      </div>
+      <div class="carousel-item">
+        <img src="img/slide/gam3.png" alt="New York" style="width:100%;">
+        <div class="carousel-caption">
+           <h4><strong>Ayo Berinvestasi di Omahternak</strong></h4>
+            <p style="font-size:18px;"><strong>Investasi Mudah dan Aman</strong></p>
+        </div>   
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+
+<div class="container-fluid" style="margin-top:10px;">
+  <ul class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Kategori</a></li>
+    <li class="breadcrumb-item active">Detail</li>
+  </ul>
+</div>
+
+
+<div  class=" container-fluid">
+<div class="row" style=" margin-left: 110px;">
+  <div class="col-sm-3">
+    <a href="unggas.html" class="thumbnail">
+      <img src="img/home/ayam.jpg" alt="1.jpg">
+    </a>
+  </div>
+  <h2> Ayam Jago </h2>
+</div>
+<br>
 <div class="container">
-  <h2>Dynamic Tabs</h2>
   <ul class="nav nav-tabs">
-    <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
-    <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
-    <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
-    <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+    <li class="active"><a data-toggle="tab" href="#home">Deskripsi</a></li>
+    <li><a data-toggle="tab" href="#menu1">Diskusi Produk</a></li>
+    <li><a data-toggle="tab" href="#menu2">Profil Pengguna</a></li>
+
   </ul>
 
   <div class="tab-content">
     <div id="home" class="tab-pane fade in active">
-      <h3>HOME</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      <h3>Deskripsi</h3>
+      <p>Kami Menjual Sapi Jawa dengan kualitas terbaik.</p>
+      <p>Kondisi Sehat tidak ada penyakit.</p>
+      <p> Berat 10 Ton </p>
+      <p>Jika berminat silahkan chat Penjual dengan memanfaatkan fitu chat dari Website ini</p>
+
     </div>
     <div id="menu1" class="tab-pane fade">
-      <h3>Menu 1</h3>
+      <h3>Diskusi Produk</h3>
       <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
     <div id="menu2" class="tab-pane fade">
-      <h3>Menu 2</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+      <h3>Profil Pengguna</h3>
+      
+<div class="row">
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="img/home/ayam.jpg" alt="1.jpg">
+    </a>
+  </div>
+  ...
+</div>
     </div>
-    <div id="menu3" class="tab-pane fade">
-      <h3>Menu 3</h3>
-      <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-    </div>
+
   </div>
 </div>
+</div>
 
+
+
+  <!--Panel Sosmed-->
+  <div class="panel-footer panelfootersosmed">
+    <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-3">
+        <img src="img/icon/omahternak2.png" alt="OmahTernak" title="Omahternak" style="width:80%; margin-top:2%;">
+      </div>
+
+      <div class="col-sm-6" style="padding-left:10%;">
+          <h6>Metode Pembayaran Rekening Bersama : </h6>
+          <a href="#"><img src="img/iconsosmed/bank.png" alt="Rekening bersama Omahternak" title="Bank Transfer Omahternak" style="width:70%;"></a></li>
+      </div>
+
+      <div class="col-sm-3" style="padding-left:5%;">
+        <h6>Ikuti Kami : </h6>
+          <ul>
+            <li><a rel="follow" target="_blank" href="#"><img alt="facebook omahternak" title="Facebook Omahternak" src="img/iconsosmed/facebook.png" width="30px"></a></li>
+
+            <li><a rel="follow" target="_blank" href="#"><img alt="twitter omahternak" title="Twitter Omahternak" src="img/iconsosmed/twitter.png" width="30px"></a></li>
+
+            <li><a rel="follow" target="_blank" href="#"><img alt="instagram omahternak" title="Instagram Omahternak" src="img/iconsosmed/instagram.png" width="30px"></a></li>
+
+            <li><a rel="follow" target="_blank" href="#"><img alt="youtube omahternK" title="Youtube Omahternak" src="img/iconsosmed/youtube.png" width="30px"></a></li>
+
+            <li><a rel="follow" target="_blank" href="#"><img alt="google plus omahternak" title="Google Plus Omahtenak" src="img/iconsosmed/google-plus.png" width="30px"></a></li>
+          </ul>
+        </div>
+       </div> 
+      </div>
+   </div>
+<!--About Omahternak-->
+  <div class="container-fluid bg-success">
+    <div class="row panelbawah colortextpanel" style="padding-top:2%; padding-bottom:1%;">
+      <div class="col-sm-3 col-md-3 text-justify">
+        <h5 class="paddingtxt-panelbottom">Hubungi Kami</h5>
+        <ul class="paddingtxt-panelbottom">
+        <li><strong>Omahternak.com</strong> adalah Tempat Jual Beli Ternak dan Investasi Ternak Terpercaya.</li>
+        <li>Jl. Bibis No.25, Bangunjiwo, Kasihan, Bantul, D.I Yogyakarta</li>
+        <li>cs@omahternak.com</li>
+        <li>Jam Layanan: 08.00-17.00 WIB</li>
+        </ul>
+      </div>
+
+      <div class="col-sm-2 col-md-2">
+      <h5 class="paddingtxt-panelbottom">Panduan Umum</h5>
+        <ul class="paddingtxt-panelbottom">
+        <li><a href="#" title="About us">Tentang Omahternak</a></li>
+        <li><a href="#" title="FAQ">FAQ</a></li>
+        <li><a href="#" title="FAQ">Panduan Omahternak</a></li>
+        <li><a target='_blank' href="#" title="Blog">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-2 col-md-2">
+        <h5 class="paddingtxt-panelbottom">Pembeli / Penjual</h5>
+        <ul class="paddingtxt-panelbottom">
+        <li><a target="_blank" href="#">Cara Beli di Omah ternak</a></li>
+        <li><a target="_blank" href="#">Jualan di Omah ternak</a></li>
+        <li><a target="_blank" href="#">Pengembalian Barang (Pembeli)</a></li>
+        <li><a target="_blank" href="#">Pengembalian Barang (Penjual)</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-2 col-md-2">
+        <h5 class="paddingtxt-panelbottom">Investasi</h5>
+        <ul class="paddingtxt-panelbottom">
+        <li><a target="_blank" href="#i">Panduan Investasi di Omah ternak</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-3 col-md-3 text-justify">
+        <h5 class="paddingtxt-panelbottom">Download aplikasi Omahternak di Play Store sekarang.</h5>
+        <ul class="paddingtxt-panelbottom"><li><a href='#'><img class="img-responsive" alt='Temukan di Google Play' src='img/iconsosmed/id_badge_web_generic.png'/></a></li></ul>
+      </div>
+
+    </div>
+  </div>
+  <!--Footer-->
+<div class="panel-footer">&copy; 2018 Omahternak.com</div>
 </body>
 </html>
