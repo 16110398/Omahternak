@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pembayaran</title>
+	<link rel="icon" type="image/png" href="img/icon/omahternak1.png">
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap/css/style.css">
+	<script src="bootstrap/js/jquery.min.js"></script>
+	<script src="bootstrap/js/popper.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/pembeli.css">
+	<style type="text/css">
+		.shadow {
+		    border-radius: 5px;
+		    background-color: #fff;
+		}
+
+		.shadow:hover{
+		    background-color: #eee;
+		    border-radius: 5px;
+		    transition: .5s;
+		    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+		}
+		 .border-p{
+			    border-top: 5px solid;
+			    color: green;
+			    background: green;
+			}   
+	
+	</style>
+     <script type="text/javascript">
+    	$(document).ready(function(e){
+   			$('.search-panel .dropdown-menu').find('a').click(function(e) {
+				e.preventDefault();
+				var param = $(this).attr("href").replace("#","");
+				var concept = $(this).text();
+				$('.search-panel span#search_concept').text(concept);
+				$('.input-group #search_param').val(param);
+			});
+		});
+    </script>
+
+      <script type="">
+    	$(document).ready(function(e){
+   			$('.search-panel .dropdown-menu').find('a').click(function(e) {
+				e.preventDefault();
+				var concept = $(this).text();
+				$('.search-panel span#search_concept1').text(concept);
+			});
+		});
+    </script>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+
+<script type="text/javascript">
+	function myFunction(){
+		document.getElemetById("iya").innerHTML = "Rp 1.000.000";
+	}
+</script>
+  
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-success navbar-dark fixed-top">
+		<a class="navbar-brand" href="#">
+	    	<img src="img/icon/omahternak2.png" alt="logo" style="width:160px;">
+	  	</a>
+	  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    		<span class="navbar-toggler-icon"></span>
+  		</button>
+  		<div class="collapse navbar-collapse" id="collapsibleNavbar">
+	  		<ul class="navbar-nav" style="margin-right:1%;">
+			    <!-- Dropdown -->
+			    <li class="nav-item dropdown">
+			      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="color:white;">
+			        Kategori
+			      </a>
+			      <div class="dropdown-menu" style="margin-top:10px;">
+			        <a class="dropdown-item" href="#">Sapi</a>
+			        <a class="dropdown-item" href="#">Kerbau</a>
+			        <a class="dropdown-item" href="#">Kambing</a>
+			        <a class="dropdown-item" href="#">Domba</a>
+			        <a class="dropdown-item" href="#">Ayam</a>
+			        <a class="dropdown-item" href="#">Bebek</a>
+			        <a class="dropdown-item" href="#">Angsa</a>
+			        <a class="dropdown-item" href="#">Itik</a>
+			        <a class="dropdown-item" href="#">Burung</a>
+			        <a class="dropdown-item" href="#">Lebah Madu</a>
+			        <a class="dropdown-item" href="#">Ikan</a>
+			        <a class="dropdown-item" href="#">Belut</a>
+			        <a class="dropdown-item" href="#">Udang</a>
+			        <a class="dropdown-item" href="#">Kepiting</a>
+			      </div>
+			    </li>
+	  		</ul>
+	  		<div class="input-group" style="width:60%; margin-left:1%;">
+			    <input type="text" class="form-control" placeholder="Cari ternak ... ?">
+				<div class="input-group-append">
+					<button class="btn btn-warning" type="submit">Cari</button>  
+				</div>
+			</div>
+			<img src="img/icon/baseline-shopping_cart-24px.svg" style="margin-left:3%;">
+			<a href="daftar.html" class="btn btn-default btn-signup" type="submit">Daftar</a>
+			<a href="login.html" class="btn btn-warning" type="submit">Masuk</a>
+		</div>
+	</nav>
+
+
+<div class="container" style="padding-top: 15px;">
+	<div class="progress" style="margin-top: 20px;">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100" style="width:30%">
+      30%--Proses Transaksi--
+    </div>
+  </div>
+	<div class="container-fluid" style="margin-top: 10px; padding: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color: #fff; margin-bottom: 30px; padding-bottom: 40px; ">
+
+
+<div class="container-fluid" style="margin-right:10px ; border-style: dashed; border-color: rgba(0, 0, 0, 0.2);">
+	<div class="row">
+		<div class="col-sm-2" style="width: 150px;" >
+			<img class="img-responsive" src="img/icon/omahternak1.png">
+		</div>
+		<div class="col-sm-10">
+			<p style="font-size: 15px;"> Silahkan Pilih Metode Pembayaran yang ingin Anda gunakan, kemudian pastikan kembali daftar belanjaan Anda. Jika Anda sudah selesai berbelanja, klik tombol "Bayar".</p>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="container-fluid" style="background-color: rgba(0, 0, 0, 0.2); margin-top: 10px; height: 200px;">
+	<dt style="text-align: center; padding-top: 1%;">Pilih Metode Pembayaran</dt>
+	<form>
+	<div class="row">
+		<div class="col-sm-6">
+			<div>
+				<div class="panel shadow" style="width: 60%; height: 80%; margin-left: 20%; margin-top: 4%">
+					<div class="form-check-inline" style="padding-left:2%; margin-top: 3%;">
+				      <label class="form-check-label" for="radio1">
+				        <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1">Tranfer Bank
+				      </label>
+				    </div>
+				    <div class="border-p"></div>
+				    <p style="padding-left: 2%;"><img src="img/icon/glyphicons-207-ok.png"  style="color: #ff3002;">Harus Konfirmasi Pembayaran</p>
+				    <p style="padding-left: 2%; margin-top: -4%;">Verikasi Manual (2x24jam)</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="col-sm-6">
+			<div class="panel shadow" style="width: 60%; height: 80%; margin-left: 19%; margin-top: 4%;">
+				<div class="form-check-inline" style="padding-left: 2%; margin-top: 3%;">
+			      <label class="form-check-label" for="radio2">
+			        <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">Bayar Ditempat
+			      </label>
+			    </div>
+			    <div class="border-p"></div>
+			    <p style="padding-left: 2%;">Kemudahan Pembayaran</p>
+				<p style="padding-left: 2%; margin-top: -4%;">Verikasi Langsung</p>
+			</div>
+		</div>
+	</div>
+</form>
+</div>
+
+	<div class="table-responsive" style="margin-top: 10px;">
+		<table class="table table-bordered">
+				<thead>
+				<tr>
+					<td colspan="6">Pembelian dari : Peternak Budi</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><dt>Sapi Potong</dt></td>
+					<td><dt> Harga</dt>Rp 12.000.000/nett,-</td>
+					<td colspan="4"><dt> Keterangan</dt>-</td>
+				</tr>
+				<tr >
+					<td><dt>Penerima</dt>Budi Sentosa<br/><dt> Alamat Tujuan</dt>Jl.Jambu no.04 Condongcatur Sleman<br/><dt>No.Telepon</dt>0821-879-1239<br/><dt>Email</dt>Budi@gmail.com
+					<td><dt> Asuransi</dt>
+					<div class="input-group">
+						 <div class="input-group-btn search-panel">
+    					<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+				    <span id="search_concept1">Iya</span></button>
+				  </div>
+				</div>
+										
+				</td>
+
+					<td><dt>Total Ternak</dt>3</td>
+					<td><dt>Subtotal</dt>Rp 21.000.000</td>
+					<td><dt>Biaya Asuransi</dt><p id="iya">-</p></td>
+					<td><dt>Ongkos Kirim</dt>Rp 1.500.000</td>		
+				</tr>
+			</tbody>
+				<tr>
+					<td colspan="6">
+						<div class="row">
+						<div class="col-xs-10"><button class="btn btn-link"><span class="glyphicon glyphicon-trash"> Hapus semua</span></button></div>
+						<div class="col-xs-2">Total = Rp 22.500.000</div>
+						</div></td>		
+				</tr>
+		</table>
+			</div>		
+		
+
+
+<div class="container-fluid" style="margin-top: 10px;">
+	<div class="row">
+		<div class="col-xs-11">
+	<button type="button" class="btn btn-warning">Kembali</button>
+	</div>
+	<div class="col-xs-1">
+	<button type="button" class="btn btn-success"><a href="konfirmasi pembayaran.html"> Bayar</a></button>
+	</div>
+	</div>
+</div>
+
+</div>
+</div>
+
+<div class="panel-footer">
+	Copyright @2018 | By Omahternak
+</div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+.navbar-fixed-top{
+    padding-top: 8px;
+    padding-bottom: 3px;
+    background: #00c300;
+    	
+}
+
+ul.dropdown-menu:before{
+    width: 16px;
+    height: 16px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: -10px;
+    left: 65px;
+    z-index: 0;
+    border-left: 10px solid #fff;
+    border-bottom: 10px solid #fff;
+    transform: rotate(133deg);
+    margin-right: 7px;
+    transition: none;
+}
+@media (max-width: 600px){
+}
+
+
+.polaroid {
+	padding: 10px;
+	margin: 6px;
+	width: 100px;
+	height: 150px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #fff;
+}
+
+.polaroid:hover{
+	background: #eee;
+}
+
+.table-bordered{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #fff;
+}
+
+.imgnav{
+    width: 250px;
+    padding-right: 50px;
+}
+.search{
+	margin-top: 7px;
+}
+.container{
+	margin-top: 5%;
+}
+.panel-default{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	background-color: #fff;
+}
