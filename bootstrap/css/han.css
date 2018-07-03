@@ -150,14 +150,21 @@ a {
     margin:0 auto;
     padding-bottom:35px;
     margin-bottom: 5px;
-    background:#EBF4FB;
+    background:#e5ffea;
     width: 100%;
     border-bottom: 1px solid #ACD8F0;
-    border-left: 1px solid #ACD8F0;
+    border-top: 1px solid #ACD8F0;
     border-right: 1px solid #ACD8F0;
 
 }
   
+.wrapperchat{
+  background:#e5ffea;
+  border-bottom: 1px solid #ACD8F0;
+  border-top: 1px solid #ACD8F0;
+  border-left: 1px solid #ACD8F0;
+}
+
 #loginform { padding-top:18px; }
   
     #loginform p { margin: 5px; }
@@ -235,7 +242,7 @@ a {
 
 .you {
     float: right;
-    color: b#aaa;
+    color: #aaa;
 }
 
 .time-right {
