@@ -25,7 +25,7 @@
 			    border-top: 5px solid;
 			    color: green;
 			    background: green;
-			}   
+		} 
 	
 	</style>
      <script type="text/javascript">
@@ -72,7 +72,7 @@ $(document).ready(function(){
     		<span class="navbar-toggler-icon"></span>
   		</button>
   		<div class="collapse navbar-collapse" id="collapsibleNavbar">
-	  		<ul class="navbar-nav" style="margin-right:1%;">
+	  		<ul class="navbar-nav" style="margin-right:2%; margin-left: 1%;">
 			    <!-- Dropdown -->
 			    <li class="nav-item dropdown">
 			      <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="color:white;">
@@ -102,9 +102,50 @@ $(document).ready(function(){
 					<button class="btn btn-warning" type="submit">Cari</button>  
 				</div>
 			</div>
-			<img src="img/icon/baseline-shopping_cart-24px.svg" style="margin-left:3%;">
-			<a href="daftar.html" class="btn btn-default btn-signup" type="submit">Daftar</a>
-			<a href="login.html" class="btn btn-warning" type="submit">Masuk</a>
+		
+			<ul class="navbar-nav">
+			    <!-- Dropdown -->
+			    <li class="nav-item dropdown " style="width: 40px;">
+			      <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown" style="margin-left: 25px; ">
+			        <img src="img/icon/baseline-shopping_cart-24px.svg" >
+			      </a>
+			      <div class="dropdown-menu" style="margin-top:5px; margin-left:-80%">
+			        <a class="dropdown-item" href="#">Keranjang Belanja</a>
+			        <div class="dropdown-divider"></div>
+			        <a class="dropdown-item" href="#">Kambing</a>
+			        <a class="dropdown-item" href="#">Domba</a>
+			      </div>
+			    </li>
+
+			    <li class="nav-item dropdown" style="margin-left: 60px; width: 35px;">
+			      <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown" style="color:white;">
+			        <img src="img/icon/history-solid.svg">
+			      </a>
+			      <div class="dropdown-menu" style="margin-top:5px; margin-left:-170%">
+			        <a class="dropdown-item" href="#">RIWAYAT TRANSAKSI</a>
+			        <div class="dropdown-divider"></div>
+			        <a class="dropdown-item" href="#">Pembayaran</a>
+			        <a class="dropdown-item" href="#">Konfirmasi Pembayaran</a>
+			        <a class="dropdown-item" href="#">Status Pembayaran</a>
+			        <a class="dropdown-item" href="#">Riwayat Pembelian</a>
+			      </div>
+			    </li>
+
+			    <li class="nav-item dropdown" style="margin-left: 50px; width: 35px;">
+			      <a class="nav-link " href="#" id="navbardrop" data-toggle="dropdown" style="color:white;">
+			        <img src="img/icon/user-solid.svg">
+			      </a>
+			      <div class="dropdown-menu" style="margin-top:5px; margin-left:-170%">
+			        <a class="dropdown-item" href="#">BUDI</a>
+			        <div class="dropdown-divider"></div>
+			        <a class="dropdown-item" href="#">Akun Saya</a>
+			        <a class="dropdown-item" href="#">Pengaturan</a>
+			        <a class="dropdown-item" href="#">Bantuan</a>
+			        <div class="dropdown-divider"></div>
+			        <a class="dropdown-item" href="#">Keluar</a>
+			      </div>
+			    </li>
+	  		</ul>		
 		</div>
 	</nav>
 
@@ -116,8 +157,6 @@ $(document).ready(function(){
     </div>
   </div>
 	<div class="container-fluid" style="margin-top: 10px; padding: 10px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);background-color: #fff; margin-bottom: 30px; padding-bottom: 40px; ">
-
-
 <div class="container-fluid" style="margin-right:10px ; border-style: dashed; border-color: rgba(0, 0, 0, 0.2);">
 	<div class="row">
 		<div class="col-sm-2" style="width: 150px;" >
@@ -192,7 +231,7 @@ $(document).ready(function(){
 				</td>
 
 					<td><dt>Total Ternak</dt>3</td>
-					<td><dt>Subtotal</dt>Rp 21.000.000</td>
+					<td><dt>Subtotal</dt>Rp 36.000.000</td>
 					<td><dt>Biaya Asuransi</dt><p id="iya">-</p></td>
 					<td><dt>Ongkos Kirim</dt>Rp 1.500.000</td>		
 				</tr>
@@ -200,22 +239,21 @@ $(document).ready(function(){
 				<tr>
 					<td colspan="6">
 						<div class="row">
-						<div class="col-xs-10"><button class="btn btn-link"><span class="glyphicon glyphicon-trash"> Hapus semua</span></button></div>
-						<div class="col-xs-2">Total = Rp 22.500.000</div>
+						<div class="col-sm-9"><button class="btn btn-link"><span class="glyphicon glyphicon-trash"> Hapus semua</span></button></div>
+						<div class="col-sm-3"><p style="margin-left: 20%;">Total = Rp 37.500.000</p></div>
 						</div></td>		
 				</tr>
-		</table>
+			</table>
 			</div>		
 		
 
-
 <div class="container-fluid" style="margin-top: 10px;">
 	<div class="row">
-		<div class="col-xs-11">
-	<button type="button" class="btn btn-warning">Kembali</button>
+		<div class="col-sm-11">
+	<button type="button" class="btn btn-warning" style="text-decoration:none; color:white">Kembali</button>
 	</div>
-	<div class="col-xs-1">
-	<button type="button" class="btn btn-success"><a href="konfirmasi pembayaran.html"> Bayar</a></button>
+	<div class="col-sm-1">
+	<button type="button" class="btn btn-success"><a href="konfirmasi pembayaran.html" style="text-decoration:none; color:white"> Bayar</a></button>
 	</div>
 	</div>
 </div>

@@ -3,12 +3,12 @@
 <head>
 	<title>Pembayaran</title>
 	<link rel="icon" type="image/png" href="img/icon/omahternak1.png">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/animate.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css" id="bootstrap-css">
-	<link rel="stylesheet" type="text/css" href="bootstrap/css/pembeli.css">
-	<script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bootstrap/css/style.css">
+  <script src="bootstrap/js/jquery.min.js"></script>
+  <script src="bootstrap/js/popper.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/pembeli.css">
 
      <script type="text/javascript">
     	$(document).ready(function(e){
@@ -36,74 +36,92 @@ $(document).ready(function(){
 
 </head>
 <body>
-<nav class="navbar navbar-fixed-top" role="navigation">
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-xs-2 nav-brand imgnav"><a href="index.hmtl">
-      <img src="img/icon/omahternak2.png" alt="OmahTernak" title="OmahTernak" class="img-responsive"></a>
-      </div>
-
-        <div class="col-xs-5 cari">
-        <div class="input-group">
-                <div class="input-group-btn search-panel">
-                    <button class="btn btn-default dropdown-toggle" data-toggle="dropdown" style="margin-bottom: 7px;" >
-                      <span id="search_concept" >Kategori </span><span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu " role="menu">
-                      <li role="presentation"><a href="#sapi">Sapi </a></li>
-                      <li role="presentation"><a href="#kerbau">Kerbau </a></li>
-                      <li role="presentation"><a href="#">Kambing </a></li>
-                      <li role="presentation"><a href="#">Domba </a></li>
-                      <li role="presentation"><a href="#">Angsa </a></li>
-                      <li role="presentation"><a href="#">Bebek </a></li>
-                      <li role="presentation"><a href="#">Ayam </a></li>
-                      <li role="presentation"><a href="#">Burung </a></li>
-                      <li role="presentation"><a href="#">Ikan </a></li>
-                      <li role="presentation" class="divider"></li>
-                      <li role="presentation"><a href="#all">Lain-Lain </a></li>
-                    </ul>
-                </div>
-
-                <input type="hidden" name="search_param" value="all" id="search_param">         
-                <input type="text" class="form-control" name="x" placeholder="Cari ternak...?">
-                <span class="input-group-btn">
-                    <button class="btn btn-default" type="button" style="margin-bottom: 7px;">Cari</button>
-                </span>
+<nav class="navbar navbar-expand-sm bg-success navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">
+        <img src="img/icon/omahternak2.png" alt="logo" style="width:160px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav" style="margin-right:2%; margin-left: 1%;">
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown" style="color:white;">
+              Kategori
+            </a>
+            <div class="dropdown-menu" style="margin-top:10px;">
+              <a class="dropdown-item" href="#">Sapi</a>
+              <a class="dropdown-item" href="#">Kerbau</a>
+              <a class="dropdown-item" href="#">Kambing</a>
+              <a class="dropdown-item" href="#">Domba</a>
+              <a class="dropdown-item" href="#">Ayam</a>
+              <a class="dropdown-item" href="#">Bebek</a>
+              <a class="dropdown-item" href="#">Angsa</a>
+              <a class="dropdown-item" href="#">Itik</a>
+              <a class="dropdown-item" href="#">Burung</a>
+              <a class="dropdown-item" href="#">Lebah Madu</a>
+              <a class="dropdown-item" href="#">Ikan</a>
+              <a class="dropdown-item" href="#">Belut</a>
+              <a class="dropdown-item" href="#">Udang</a>
+              <a class="dropdown-item" href="#">Kepiting</a>
             </div>
+          </li>
+        </ul>
+        <div class="input-group" style="width:60%; margin-left:1%;">
+          <input type="text" class="form-control" placeholder="Cari ternak ... ?">
+        <div class="input-group-append">
+          <button class="btn btn-warning" type="submit">Cari</button>  
         </div>
+      </div>
+    
+      <ul class="navbar-nav">
+          <!-- Dropdown -->
+          <li class="nav-item dropdown " style="width: 40px;">
+            <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown" style="margin-left: 25px; ">
+              <img src="img/icon/baseline-shopping_cart-24px.svg" >
+            </a>
+            <div class="dropdown-menu" style="margin-top:5px; margin-left:-80%">
+              <a class="dropdown-item" href="#">Keranjang Belanja</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Kambing</a>
+              <a class="dropdown-item" href="#">Domba</a>
+            </div>
+          </li>
 
+          <li class="nav-item dropdown" style="margin-left: 60px; width: 35px;">
+            <a class="nav-link" href="#" id="navbardrop" data-toggle="dropdown" style="color:white;">
+              <img src="img/icon/history-solid.svg">
+            </a>
+            <div class="dropdown-menu" style="margin-top:5px; margin-left:-170%">
+              <a class="dropdown-item" href="#">RIWAYAT TRANSAKSI</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Pembayaran</a>
+              <a class="dropdown-item" href="#">Konfirmasi Pembayaran</a>
+              <a class="dropdown-item" href="#">Status Pembayaran</a>
+              <a class="dropdown-item" href="#">Riwayat Pembelian</a>
+            </div>
+          </li>
 
-        <div class="col-xs-2" style="float: center;">
-        	<button class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-history"></span><span class="caret"></span></button>
-        	<ul class="dropdown-menu " role="menu">
-               <li class="header"><a href="pembayaran.html">
-               	pemesanan</a></li>
-               	<li class="divider"></li>
-               	<li role="presentation"><a href="konfirmasi pembayaran.html">Sapi Potong<br/>Peternak Budi</a></li>
-               	<li class="divider"></li>
-               	<li class="footer" role="presentation"><a href="riwayat pemesanan.html"> Lihat Semua Riwayat Pemesanan</a></li>
-               </ul>
-
-        </div>
-
-        <div class="col-xs-2" style="float: right;">
-        	<div class="dropdown">
-        	<button class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span><span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu " role="menu">
-                <li role="presentation"><a href="#Budi">Budi </a></li>
-                <li class="divider"></li>
-                <li role="presentation"><a href="#Pengaturan">Pengaturan </a></li>
-                <li role="presentation"><a href="#">Bantuan </a></li>
-                 <li role="presentation"><a href="#">Logout </a></li>
-                  </ul>
-        </div>
+          <li class="nav-item dropdown" style="margin-left: 50px; width: 35px;">
+            <a class="nav-link " href="#" id="navbardrop" data-toggle="dropdown" style="color:white;">
+              <img src="img/icon/user-solid.svg">
+            </a>
+            <div class="dropdown-menu" style="margin-top:5px; margin-left:-170%">
+              <a class="dropdown-item" href="#">BUDI</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Akun Saya</a>
+              <a class="dropdown-item" href="#">Pengaturan</a>
+              <a class="dropdown-item" href="#">Bantuan</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Keluar</a>
+            </div>
+          </li>
+        </ul>   
     </div>
-	</div>
-</div>
-</nav>
+  </nav>
 
-<div class="container">
+<div class="container" style="padding-top:5px;">
   <div class="progress animated jello" style="margin-top: 20px;">
     <div class="progress-bar progress-bar-striped active " role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width:100%">
       100%--Proses Transaksi--
@@ -111,9 +129,9 @@ $(document).ready(function(){
   </div>
 
     <div class="container-fluid" style="align-content: center; text-align: center;">
-    <img class="img-responsive animated jackInTheBox" src="img/icon/omahternak1.png">
+      <img class="img-responsive animated jackInTheBox" src="img/icon/omahternak1.png" style="padding-top:40px; margin-left: 43%">
       <p style="font-size: 20px;">Yeay!! Selamat Transaksi Anda Berhasil</p>
-</div>
+    </div>
 
   </div>
 </body>
