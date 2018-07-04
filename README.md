@@ -10,6 +10,9 @@ Nama Kelompok :
 
 Nama Startup : Omahternak.com
 
+Deskripsi :
+Omahternak adalah tempat jual beli dan investasi ternak secara online
+
 Fitur :
 1. User
    a. Homepage : (Terbaru, peternakan/produk peternakan, cara jual/beli dan berinvestasi, kategori, metode pembayaran, kontak, bantuan, tentang omahternak.com, investasi, tombol login/daftar)
