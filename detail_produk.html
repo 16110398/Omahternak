@@ -42,7 +42,93 @@
 			    background: #fff;
 			    margin-top: 30px;
 			    width: 440px;
-			}
+		}
+
+
+		#gambar {
+		   cursor: pointer;
+		   transition: 0.3s;
+		}
+
+
+		/* The Modal (background) */
+		.modal {
+		    display: none; /* Hidden by default */
+		    position: fixed; /* Stay in place */
+		    z-index: 1; /* Sit on top */
+		    padding-top: 100px; /* Location of the box */
+		    left: 0;
+		    top: 0;
+		    width: 100%; /* Full width */
+		    height: 100%; /* Full height */
+		    overflow: auto; /* Enable scroll if needed */
+		    background-color: rgb(0,0,0); /* Fallback color */
+		    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+		}
+
+		/* Modal Content (image) */
+		.modal-content {
+		    margin: auto;
+		    display: block;
+		    width: 80%;
+		    max-width: 700px;
+		}
+
+		/* Caption of Modal Image */
+		#caption {
+		    margin: auto;
+		    display: block;
+		    width: 80%;
+		    max-width: 700px;
+		    text-align: center;
+		    color: #ccc;
+		    padding: 10px 0;
+		    height: 150px;
+		}
+
+		/* Add Animation */
+		.modal-content, #caption {    
+		    -webkit-animation-name: zoom;
+		    -webkit-animation-duration: 0.6s;
+		    animation-name: zoom;
+		    animation-duration: 0.6s;
+		}
+
+		@-webkit-keyframes zoom {
+		    from {-webkit-transform:scale(0)} 
+		    to {-webkit-transform:scale(1)}
+		}
+
+		@keyframes zoom {
+		    from {transform:scale(0)} 
+		    to {transform:scale(1)}
+		}
+
+		/* The Close Button */
+		.close {
+		    position: absolute;
+		    top: 70px;
+		    right: 60px;
+		    color: #f1f1f1;
+		    font-size: 40px;
+		    font-weight: bold;
+		    transition: 0.3s;
+		    z-index: 9999;
+		}
+
+		.close:hover,
+		.close:focus {
+		    color: #bbb;
+		    text-decoration: none;
+		    cursor: pointer;
+		}
+
+		/* 100% Image Width on Smaller Screens */
+		@media only screen and (max-width: 700px){
+		    .modal-content {
+		        width: 100%;
+		    }
+		}
 
 	</style>
 </head>
@@ -145,10 +231,10 @@
 							<!--slide produk-->
 				                <div class="row" style="margin-right:-50px;" >
 				                    <div class="mySlides">
-				                      <img src="img\home\SAPI\sapi3.jpg" class="rounded" style="width:75%">
+				                      <img src="img\home\SAPI\sapi3.jpg" class="rounded" style="width:75%" id="gambar">
 				                    </div>
 				                    <div class="mySlides">
-				                      <img src="img\home\SAPI\sapi5.jpg" class="rounded" style="width:75%">
+				                      <img src="img\home\SAPI\sapi5.jpg" class="rounded" style="width:75%" id="gambar">
 				                    </div>
 				                    <div class="mySlides">
 				                      <img src="img\home\SAPI\sapi3.jpg"  class="rounded" style="width:75%">
@@ -166,6 +252,13 @@
 				                    <img class="demo cursor" src="img\home\SAPI\sapi3.jpg" style="width:70px;" onclick="currentSlide(3)">
 				                  </div> 
 				                </div> <!--slide produk-->
+
+				                <!-- The Modal -->
+								<div id="myModal" class="modal">
+								  <span class="close">&times;</span>
+								  <img class="modal-content" id="img01">
+								  <div id="caption"></div>
+								</div>
 
 				                <div class="row" style="margin-top:15px;">
 				                	<div class="col-sm-12 panelfootersosmed">
@@ -204,14 +297,14 @@
 							</div>
 							<div class="border-p"></div>
 							<div class="row" style="margin-top:10px;">
-								<a href="pembayaran.html"><div class="col-sm-12"><button class="btn btn-success" style="width:440px; margin-left:10px;">BELI SEKARANG</button></div></a>
+								<div class="col-sm-12"><a href="pembayaran.html"><button class="btn btn-success" style="width:440px">BELI SEKARANG</button></a></div>
 							</div>
 							<div class="row">
 								<div class="col-sm-10" style="margin-top:10px; margin-left:2px;">
 									<div class="card" style="width:432px;">
 										<div class="card-body text-justify">
 											<p>
-												Transaksi Aman Gunakan Rekening Bersama Omahternak<br>
+												Transaksi Aman Gunakan Rekening Bersama Agromaret<br>
 												    1.Hanya pembayaran melalui rekening a/n Omah Ternak dijamin 100% aman. <a href="#">Lihat selengkapnya</a><br>
 												    2.Uang akan dikembalikan jika barang tidak diterima
 												</p>
@@ -238,9 +331,8 @@
 					<p style="padding-top:10px;"><strong>Celvin</strong></p>
 					<p><i>Member sejak 2016</i></p>
 					<p><i>Login Terakhir 2018-06-30 13:15:20</i></p>
-					<p>Jawa Tengah</p>
-
-					<a href="chat2.html"><button class="btn btn-success" style="width:335px;"> Chat Penjual</button></a>
+					<p><img src="img/icon/baseline-location_on-24px.svg" style="margin-top:-7px; width:15px;"> Jawa Tengah</p>
+					<button class="btn btn-success" style="width:335px;"> Chat Penjual</button>
 				</div>
 			</div>
 		</div>
@@ -250,10 +342,9 @@
 		<div class="row">
 			<div class="col-sm-8" style="margin-left:14px; margin-bottom:15px;">
 				<div class="card" style="width:807px;"> 
+					<div class="card-header bg-success" style="color:white;">Deskripsi Produk</div>
 					<div class="card-body">
 						<div class="container">
-							<h6>Deskripsi Produk</h6>
-                  			<br>
                   			<!-- Nav tabs -->
 			                  <ul class="nav nav-tabs" role="tablist">
 			                    <li class="nav-item">
@@ -271,7 +362,7 @@
 			                  <div class="tab-content">
 			                    <div id="home" class="container tab-pane active"><br>
 			                      <h6>DESKRIPSI</h6>
-			                      <p>Kami menjual sapi potong berat 300-500kg berbagai jenis sapi simental, brahman, PO dll kondisi sehat berminat WA ke</p>
+			                      <p>Kami menjual sapi simetal berat 300-500kg berbagai jenis sapi simental, brahman, PO dll kondisi sehat berminat WA ke</p>
 			                    </div>
 
 			                    <div id="menu1" class="container tab-pane fade"><br>
@@ -301,7 +392,7 @@
 											  </ul>
 					                      </div>
 					                </div>
-					                <div class="row" style="padding-top:10px;"><button class="btn btn-success">Lihat Profil Lengkapnya</button></div>
+					                <div class="row" style="padding-top:10px; margin-left:5px;"><button class="btn btn-success">Lihat Profil Lengkapnya</button></div>
 
 
 			                    </div>
@@ -315,28 +406,56 @@
 
 		<div class="row">
 			<div class="col-sm-8" style="margin-left:14px; margin-bottom:15px;">
-				<div class="card" style="width:807px;"> 
+				<div class="card" style="width:807px; height:450px;">
+					<div class="card-header bg-success" style="color:white;">Detail Produk</div> 
 					<div class="card-body">
-						<h4>Produk Sejenis</h4>
-						<div class="row">
-							 <div class="col-xs-6 col-sm-3"><div class="card polaroid" style="width:200px">
-					            <a href="detailbeli.html"><img class="card-img-top" src="img/home/kambing1.jpg" alt="Card image" style="width:100%"></a>
-					            <div class="card-body">
-					              <a href="detailbeli.html" style="text-decoration:none; color:black;"><h5 class="card-title">Kambing Juara</h5></a>
-					          </div>
-					      </div></div>
-							  <div class="col-xs-6 col-sm-3"><div class="card polaroid" style="width:200px">
-            				<a href="detailbeli.html"><img class="card-img-top" src="img/home/sapi2.jpg" alt="Card image" style="width:100%"></a>
-            				<div class="card-body">
-              			<a href="detailbeli.html" style="text-decoration:none; color:black;"><h5 class="card-title">Sapi Jawa</h5></a></div> 
-              			
-							  
-							  
-								
-					  </div>
-					</div>
+							<div class="container" style="margin-left:40px;">
+							<div class="row" style="margin-top:-30px;">		
+								<div class="col-sm-2" style="margin-right:90px;">
+								  <div class="card polaroid" style="width:210px; height:330px;">
+								    <a href="#"><img class="card-img-top" src="img/home/SAPI/sapi5.jpg" alt="Card image" style="width:100%"></a>
+								    <div class="card-body">
+								      <a href="#" style="text-decoration:none; color:black;"><h4 class="card-title">Sapi Metal</h4></a>
+								      <p class="card-text" style="color:orange">Rp. 15.000.000,- </p>
+								      <p class="card-text" style="margin-top:-13px; font-size:14px;">Minimal Pembelian :</p>
+								      <p class="card-text" style="margin-top:-11px; color:green;">3 Ekor</p>
+								      <p class="card-text" style="margin-top:-12px; font-size:14px;">Nurma</p>
+								    <img src="img/icon/baseline-location_on-24px.svg" style="margin-top:-10px; width:17px; margin-top:-20px;">
+								    </div>
+								  </div>
+						      </div>
 
-					
+						      <div class="col-sm-2" style="margin-right:90px;">
+								  <div class="card polaroid" style="width:210px; height:330px;">
+								    <a href="#"><img class="card-img-top" src="img/home/SAPI/sapi5.jpg" alt="Card image" style="width:100%"></a>
+								    <div class="card-body">
+								      <a href="#" style="text-decoration:none; color:black;"><h4 class="card-title">Sapi Metal</h4></a>
+								      <p class="card-text" style="color:orange">Rp. 15.000.000,- </p>
+								      <p class="card-text" style="margin-top:-13px; font-size:14px;">Minimal Pembelian :</p>
+								      <p class="card-text" style="margin-top:-11px; color:green;">3 Ekor</p>
+								      <p class="card-text" style="margin-top:-12px; font-size:14px;">Nurma</p>
+								    <img src="img/icon/baseline-location_on-24px.svg" style="margin-top:-10px; width:17px; margin-top:-20px;">
+								    </div>
+								  </div>
+						      </div>
+
+						      <div class="col-sm-2" style="margin-right:3%;">
+								  <div class="card polaroid" style="width:210px; height:330px;">
+								    <a href="#"><img class="card-img-top" src="img/home/SAPI/sapi5.jpg" alt="Card image" style="width:100%"></a>
+								    <div class="card-body">
+								      <a href="#" style="text-decoration:none; color:black;"><h4 class="card-title">Sapi Metal</h4></a>
+								      <p class="card-text" style="color:orange">Rp. 15.000.000,- </p>
+								      <p class="card-text" style="margin-top:-13px; font-size:14px;">Minimal Pembelian :</p>
+								      <p class="card-text" style="margin-top:-11px; color:green;">3 Ekor</p>
+								      <p class="card-text" style="margin-top:-12px; font-size:14px;">Nurma</p>
+								    <img src="img/icon/baseline-location_on-24px.svg" style="margin-top:-10px; width:17px; margin-top:-20px;">
+								    </div>
+								  </div>
+						      </div>
+
+					      </div>
+					      </div>
+
 					</div>
 				</div>
 			</div>
@@ -457,5 +576,29 @@
     captionText.innerHTML = dots[slideIndex-1].alt;
   }
 </script>
+
+
+	<script>
+	// Get the modal
+	var modal = document.getElementById('myModal');
+
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	var img = document.getElementById('gambar');
+	var modalImg = document.getElementById("img01");
+	var captionText = document.getElementById("caption");
+	img.onclick = function(){
+	    modal.style.display = "block";
+	    modalImg.src = this.src;
+	    captionText.innerHTML = this.alt;
+	}
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() { 
+	    modal.style.display = "none";
+	}
+	</script>
 </body>
 </html>
